@@ -1,0 +1,5 @@
+# cloudcannon.config.yml
+source: _site
+_inputs:
+  title:
+    type: text
