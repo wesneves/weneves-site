@@ -1,11 +1,22 @@
 ---
-title: "weneves-site"
+title: "W. Neves"
+subtitle: "Pesquisador | Análise Quantitativa | Ciência de Dados"
+image: foto-perfil.jpg # Se tiver uma foto na pasta do projeto
+about:
+  template: jolla
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://linkedin.com/in/seu-perfil
+    - icon: github
+      text: Github
+      href: https://github.com/wesneves
 ---
 
-This is a Quarto website.
+Bem-vindo ao meu laboratório digital. Sou pesquisador focado em oceanografia quantitativa, especializado no processamento de séries temporais de 20 anos de dados de clorofila na plataforma continental brasileira.
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+## Áreas de Interesse
 
-```{r}
-1 + 1
-```
+-   Modelagem Estatística em R
+-   Sensoriamento Remoto (Ocean Color)
+-   Filosofia da Ciência (Perspectiva Popperiana)
