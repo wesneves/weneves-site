@@ -21,9 +21,8 @@ website:
 
 format:
   html:
-    theme: none
+    theme: litera
     css: styles.css
-    cache: false
     toc: false
     lang: pt
 

@@ -7,7 +7,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Wesley de Oliveira Neves">
-<meta name="dcterms.date" content="2026-02-27">
 
 <title>Do Dado ao Artigo – Wesley Neves</title>
 <style>
@@ -22,45 +21,151 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-.display.math{display: block; text-align: center; margin: 0.5rem auto;}
 </style>
 
 
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-html/tabby.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-html-734cb40618f438257b19a1e532635a32.min.css" rel="stylesheet" append-hash="true" data-mode="light">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-527b3a5651f3f64c9f262051b38e9d3e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Nenhum resultado",
+    "search-matching-documents-text": "documentos correspondentes",
+    "search-copy-link-title": "Copiar link para a busca",
+    "search-hide-matches-text": "Esconder correspondências adicionais",
+    "search-more-match-text": "mais correspondência neste documento",
+    "search-more-matches-text": "mais correspondências neste documento",
+    "search-clear-button-title": "Limpar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Procurar"
+  }
+}</script>
 
 
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body class="nav-fixed fullcontent quarto-light">
 
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    </a>
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Wesley Neves</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Procurar"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Alternar de navegação" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html"> 
+<span class="menu-text">Sobre</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./curso.html" aria-current="page"> 
+<span class="menu-text">🎓 Curso Sympla</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./posts/index.html"> 
+<span class="menu-text">Blog/Dicas</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content">
 
-<header id="title-block-header">
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
 <h1 class="title">Do Dado ao Artigo</h1>
-<p class="subtitle">Análise Quantitativa no R: Modelagem, Multivariada e Produção Científica</p>
-<p class="author">Wesley de Oliveira Neves</p>
+<p class="subtitle lead">Análise Quantitativa no R: Modelagem, Multivariada e Produção Científica</p>
+</div>
 
-<p class="date">2026-02-27</p>
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Autor</div>
+    <div class="quarto-title-meta-contents">
+             <p>Wesley de Oliveira Neves </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Data de Publicação</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">27 de fevereiro de 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
 </header>
 
 
-<section id="boas-vindas-ao-futuro-da-sua-análise-de-dados" class="welcome-box">
-<h3 class="anchored">👋 Boas-vindas ao Futuro da sua Análise de Dados</h3>
+<section id="boas-vindas-ao-futuro-da-sua-análise-de-dados" class="level3 welcome-box">
+<h3 class="anchored" data-anchor-id="boas-vindas-ao-futuro-da-sua-análise-de-dados">👋 Boas-vindas ao Futuro da sua Análise de Dados</h3>
 <p>Este treinamento foi desenhado para transformar a sua relação com dados científicos. Vamos superar a barreira do código básico para alcançar uma produção científica <strong>robusta, reprodutível e visualmente impecável</strong>. Da limpeza dos dados à submissão do artigo, o R será seu maior aliado.</p>
 </section>
-<h2 id="roteiro-da-jornada" class="anchored">🗺️ Roteiro da Jornada</h2>
-<div class="panel-tabset">
-<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">💻 Módulo 1: Fundamentos &amp; Tidyverse</a></li><li><a href="#tabset-1-2">🌿 Módulo 2: Ecologia &amp; Estatística</a></li><li><a href="#tabset-1-3">⚙️ Módulo 3: Desenvolvimento</a></li><li><a href="#tabset-1-4">📄 Módulo 4: Produção Científica</a></li></ul>
+<section id="roteiro-da-jornada" class="level2">
+<h2 class="anchored" data-anchor-id="roteiro-da-jornada">🗺️ Roteiro da Jornada</h2>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">💻 Módulo 1: Fundamentos &amp; Tidyverse</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">🌿 Módulo 2: Ecologia &amp; Estatística</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">⚙️ Módulo 3: Desenvolvimento</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false" href="">📄 Módulo 4: Produção Científica</a></li></ul>
 <div class="tab-content">
-<div id="tabset-1-1">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <p><em>12 horas | O alicerce da manipulação moderna</em></p>
 <p>Neste módulo, dominamos o fluxo de trabalho profissional, garantindo que você nunca mais se perca em planilhas confusas.</p>
 <ul>
@@ -69,7 +174,7 @@ ul.task-list li input[type="checkbox"] {
 <li><strong>Aula 03:</strong> Visualização com <code>ggplot2</code>: A gramática dos gráficos para publicações de alto impacto.</li>
 </ul>
 </div>
-<div id="tabset-1-2">
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
 <p><em>12 horas | Onde a teoria encontra o código</em></p>
 <p>Aplicamos ferramentas estatísticas e ecológicas em dados reais, focando na interpretação biológica dos resultados.</p>
 <ul>
@@ -78,7 +183,7 @@ ul.task-list li input[type="checkbox"] {
 <li><strong>Aula 06:</strong> Ecologia de Comunidades II: Análises Multivariadas (PCA, nMDS e PERMANOVA).</li>
 </ul>
 </div>
-<div id="tabset-1-3">
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
 <p><em>8 horas | De usuário a desenvolvedor</em></p>
 <p>Automatize tarefas repetitivas e aprenda a organizar seu próprio fluxo de ferramentas.</p>
 <ul>
@@ -86,7 +191,7 @@ ul.task-list li input[type="checkbox"] {
 <li><strong>Aula 08:</strong> Engenharia de Funções e Pacotes: Como criar suas próprias ferramentas e documentá-las.</li>
 </ul>
 </div>
-<div id="tabset-1-4">
+<div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
 <p><em>8 horas | A apresentação final da ciência</em></p>
 <p>O toque final: transformar códigos em documentos profissionais e relatórios dinâmicos.</p>
 <ul>
@@ -96,7 +201,9 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-<h2 id="informações-práticas" class="anchored">📌 Informações Práticas</h2>
+</section>
+<section id="informações-práticas" class="level2">
+<h2 class="anchored" data-anchor-id="informações-práticas">📌 Informações Práticas</h2>
 <ul>
 <li><strong>📅 Início:</strong> 28/02/2026 , às <strong>08:00h</strong>.</li>
 <li><strong>⏳ Carga Horária:</strong> 40 horas com emissão de certificado.</li>
@@ -104,13 +211,24 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p><a href="https://www.sympla.com.br/evento-online/do-dado-ao-artigo-analise-quantitativa-no-r-modelagem-multivariada-e-producao-cientifica/3315580" class="btn-primary btn-lg">Acessar Evento Sympla</a></p>
 <hr>
-<h2 id="área-exclusiva-do-aluno" class="anchored">🔐 Área Exclusiva do Aluno</h2>
-<div>
-<blockquote>
-<p><strong>Clique para expandir: Materiais e Scripts das Aulas</strong></p>
+</section>
+<section id="área-exclusiva-do-aluno" class="level2">
+<h2 class="anchored" data-anchor-id="área-exclusiva-do-aluno">🔐 Área Exclusiva do Aluno</h2>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Aviso</span>Clique para expandir: Materiais e Scripts das Aulas
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
 <p>Para garantir a integridade dos scripts desenvolvidos em aula, os arquivos abaixo estão compactados e protegidos por senha.</p>
 <p><strong>A senha foi disponibilizada no chat da sala virtual e no e-mail de boas-vindas do Sympla.</strong></p>
-<table class="caption-top">
+<table class="caption-top table">
 <thead>
 <tr class="header">
 <th style="text-align: left;">Conteúdo</th>
@@ -172,16 +290,16 @@ ul.task-list li input[type="checkbox"] {
 </tbody>
 </table>
 <p><em>Problemas com o acesso? Entre em contato pelo chat do Sympla.</em></p>
-</blockquote>
+</div>
+</div>
 </div>
 
 
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
-    const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
-    tabsets.forEach(function(tabset) {
-      const tabby = new Tabby('#' + tabset.id);
-    });
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {
@@ -280,7 +398,7 @@ ul.task-list li input[type="checkbox"] {
         },
         interactive: true,
         interactiveBorder: 10,
-        theme: 'light-border',
+        theme: 'quarto',
         placement: 'bottom-start',
       };
       if (contentFn) {
@@ -580,6 +698,7 @@ ul.task-list li input[type="checkbox"] {
     }
   });
   </script>
+</div> <!-- /content -->
 
 
 

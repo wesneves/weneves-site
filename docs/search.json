@@ -1,0 +1,58 @@
+[
+  {
+    "objectID": "curso.html",
+    "href": "curso.html",
+    "title": "Do Dado ao Artigo",
+    "section": "",
+    "text": "Este treinamento foi desenhado para transformar a sua relação com dados científicos. Vamos superar a barreira do código básico para alcançar uma produção científica robusta, reprodutível e visualmente impecável. Da limpeza dos dados à submissão do artigo, o R será seu maior aliado."
+  },
+  {
+    "objectID": "curso.html#roteiro-da-jornada",
+    "href": "curso.html#roteiro-da-jornada",
+    "title": "Do Dado ao Artigo",
+    "section": "🗺️ Roteiro da Jornada",
+    "text": "🗺️ Roteiro da Jornada\n\n💻 Módulo 1: Fundamentos & Tidyverse🌿 Módulo 2: Ecologia & Estatística⚙️ Módulo 3: Desenvolvimento📄 Módulo 4: Produção Científica\n\n\n12 horas | O alicerce da manipulação moderna\nNeste módulo, dominamos o fluxo de trabalho profissional, garantindo que você nunca mais se perca em planilhas confusas.\n\nAula 01: O Ecossistema R e RStudio (Instalação e Lógica de Objetos).\nAula 02: Manipulação com dplyr: O poder do Pipe (|&gt;) para filtros, seleções e transformações.\nAula 03: Visualização com ggplot2: A gramática dos gráficos para publicações de alto impacto.\n\n\n\n12 horas | Onde a teoria encontra o código\nAplicamos ferramentas estatísticas e ecológicas em dados reais, focando na interpretação biológica dos resultados.\n\nAula 04: Modelagem Estatística: De testes clássicos (ANOVA/t) aos Modelos Lineares Generalizados (GLM).\nAula 05: Ecologia de Comunidades I: Diversidade, Riqueza e o indispensável pacote vegan.\nAula 06: Ecologia de Comunidades II: Análises Multivariadas (PCA, nMDS e PERMANOVA).\n\n\n\n8 horas | De usuário a desenvolvedor\nAutomatize tarefas repetitivas e aprenda a organizar seu próprio fluxo de ferramentas.\n\nAula 07: Programação Funcional: Automatização com a família apply e o pacote purrr.\nAula 08: Engenharia de Funções e Pacotes: Como criar suas próprias ferramentas e documentá-las.\n\n\n\n8 horas | A apresentação final da ciência\nO toque final: transformar códigos em documentos profissionais e relatórios dinâmicos.\n\nAula 09: Comunicação com RMarkdown e LaTeX: Inserção de equações e controle de chunks.\nAula 10: Customização Web e Projeto Final: CSS personalizado e a entrega do seu relatório integrativo."
+  },
+  {
+    "objectID": "curso.html#informações-práticas",
+    "href": "curso.html#informações-práticas",
+    "title": "Do Dado ao Artigo",
+    "section": "📌 Informações Práticas",
+    "text": "📌 Informações Práticas\n\n📅 Início: 28/02/2026 , às 08:00h.\n⏳ Carga Horária: 40 horas com emissão de certificado.\n🎥 Formato: Aulas ao vivo com suporte prático.\n\nAcessar Evento Sympla"
+  },
+  {
+    "objectID": "curso.html#área-exclusiva-do-aluno",
+    "href": "curso.html#área-exclusiva-do-aluno",
+    "title": "Do Dado ao Artigo",
+    "section": "🔐 Área Exclusiva do Aluno",
+    "text": "🔐 Área Exclusiva do Aluno\n\n\n\n\n\n\nAvisoClique para expandir: Materiais e Scripts das Aulas\n\n\n\n\n\nPara garantir a integridade dos scripts desenvolvidos em aula, os arquivos abaixo estão compactados e protegidos por senha.\nA senha foi disponibilizada no chat da sala virtual e no e-mail de boas-vindas do Sympla.\n\n\n\nConteúdo\nLink de Acesso\nFormato\n\n\n\n\nScript e Conteúdo - Aula 1\nAcessar Pasta\n.ZIP (Protegido)\n\n\nScript e Conteúdo - Aula 2\nAcessar Pasta\n.ZIP (Protegido)\n\n\nScript e Conteúdo - Aula 3\nAcessar Pasta\n.ZIP (Protegido)\n\n\nScript e Conteúdo - Aula 4\nAcessar Pasta\n.ZIP (Protegido)\n\n\nScript e Conteúdo - Aula 5\nAcessar Pasta\n.ZIP (Protegido)\n\n\nScript e Conteúdo - Aula 6\nAcessar Pasta\n.ZIP (Protegido)\n\n\nScript e Conteúdo - Aula 7\nAcessar Pasta\n.ZIP (Protegido)\n\n\nScript e Conteúdo - Aula 8\nAcessar Pasta\n.ZIP (Protegido)\n\n\nScript e Conteúdo - Aula 9\nAcessar Pasta\n.ZIP (Protegido)\n\n\nScript e Conteúdo - Aula 10\nAcessar Pasta\n.ZIP (Protegido)\n\n\n\nProblemas com o acesso? Entre em contato pelo chat do Sympla."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Sobre",
+    "section": "",
+    "text": "Dedicado à compreensão da biodiversidade marinha através de lentes quantitativas. Especialista em ecologia de comunidades marinhas e modelagem estatística, atuo na interseção entre a oceanografia biológica e a ciência de dados, desenvolvendo soluções analíticas em R para problemas ecológicos complexos."
+  },
+  {
+    "objectID": "about.html#formação-acadêmica",
+    "href": "about.html#formação-acadêmica",
+    "title": "Sobre",
+    "section": "Formação Acadêmica",
+    "text": "Formação Acadêmica\n\nDoutorado em Oceanografia (Em andamento) | Universidade Federal de Pernambuco\nMestrado em Biologia Animal| Universidade Federal de Pernambuco\nGraduação em Ciências Biológicas| Universidade Federal de Pernambuco"
+  },
+  {
+    "objectID": "about.html#experiência-com-ensino",
+    "href": "about.html#experiência-com-ensino",
+    "title": "Sobre",
+    "section": "Experiência com Ensino",
+    "text": "Experiência com Ensino\nComo instrutor de Data Science, foco na democratização de ferramentas computacionais para pesquisadores, ministrando cursos de R aplicados à análise de dados biológicos."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "\nWesley Neves\n",
+    "section": "",
+    "text": "Biólogo & Cientista de Dados\n\n\nTransformando dados marinhos em conhecimento ecológico através de modelos quantitativos e programação em R.\n\n\nSaiba mais sobre mim Ver Curso Blog"
+  }
+]
