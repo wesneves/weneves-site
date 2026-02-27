@@ -1,18 +1,5 @@
 ---
 title: "Sobre"
-about:
-  template: trestles # Layout com foto na esquerda e texto na direita
-  image: profile.jpg # Coloque sua foto na pasta do projeto
-  links:
-    - icon: github
-      text: GitHub
-      href: https://github.com/wesneves
-    - icon: linkedin
-      text: LinkedIn
-      href: https://linkedin.com/in/seu-perfil
-    - icon: mortarboard
-      text: Lattes
-      href: http://lattes.cnpq.br/seu-id
 ---
 
 Dedicado à compreensão da biodiversidade marinha através de lentes quantitativas. Especialista em ecologia de comunidades marinhas e modelagem estatística, atuo na interseção entre a oceanografia biológica e a ciência de dados, desenvolvendo soluções analíticas em R para problemas ecológicos complexos.
