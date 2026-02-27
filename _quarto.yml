@@ -8,17 +8,16 @@ website:
     left:
       - href: index.qmd
         text: Início
-      - href: research.qmd
+      - href: pesquisa.qmd
         text: Pesquisa
-      - href: teaching.qmd
+      - href: ensino.qmd
         text: Ensino
       - href: cv.qmd
         text: CV
-      - href: contact.qmd
+      - href: contato.qmd
         text: Contato
-
 format:
   html:
     theme: cosmo
     css: styles.css
-    toc: true
+    toc: false

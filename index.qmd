@@ -13,10 +13,29 @@ about:
       href: https://github.com/wesneves
 ---
 
-Bem-vindo ao meu laboratório digital. Sou pesquisador focado em oceanografia quantitativa, especializado no processamento de séries temporais de 20 anos de dados de clorofila na plataforma continental brasileira.
+<div class="hero">
+  <h1>Wesley Neves</h1>
+  <p>Pesquisador | Oceanografia Quantitativa | Ciência de Dados</p>
+</div>
+
+<div class="section">
+
+## Sobre Mim
+
+Sou pesquisador focado em oceanografia quantitativa, com experiência em análise de séries temporais ambientais e modelagem estatística aplicada à ecologia marinha.
+
+Meu trabalho integra estatística, programação em R e interpretação ecológica para compreender padrões na plataforma continental brasileira.
+
+</div>
+
+<div class="section">
 
 ## Áreas de Interesse
 
--   Modelagem Estatística em R
--   Sensoriamento Remoto (Ocean Color)
--   Filosofia da Ciência (Perspectiva Popperiana)
+- Modelagem estatística ecológica  
+- Séries temporais ambientais  
+- Estrutura funcional do zooplâncton  
+- Análise multivariada  
+- Ciência de Dados aplicada à ecologia  
+
+</div>

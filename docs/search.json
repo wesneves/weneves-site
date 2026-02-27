@@ -4,14 +4,7 @@
     "href": "index.html",
     "title": "W. Neves",
     "section": "",
-    "text": "Bem-vindo ao meu laboratório digital. Sou pesquisador focado em oceanografia quantitativa, especializado no processamento de séries temporais de 20 anos de dados de clorofila na plataforma continental brasileira."
-  },
-  {
-    "objectID": "index.html#áreas-de-interesse",
-    "href": "index.html#áreas-de-interesse",
-    "title": "W. Neves",
-    "section": "Áreas de Interesse",
-    "text": "Áreas de Interesse\n\nModelagem Estatística em R\nSensoriamento Remoto (Ocean Color)\nFilosofia da Ciência (Perspectiva Popperiana)"
+    "text": "Pesquisador | Oceanografia Quantitativa | Ciência de Dados"
   },
   {
     "objectID": "about.html",
@@ -19,5 +12,19 @@
     "title": "About",
     "section": "",
     "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "index.html#sobre-mim",
+    "href": "index.html#sobre-mim",
+    "title": "W. Neves",
+    "section": "Sobre Mim",
+    "text": "Sobre Mim\nSou pesquisador focado em oceanografia quantitativa, com experiência em análise de séries temporais ambientais e modelagem estatística aplicada à ecologia marinha.\nMeu trabalho integra estatística, programação em R e interpretação ecológica para compreender padrões na plataforma continental brasileira."
+  },
+  {
+    "objectID": "index.html#áreas-de-interesse",
+    "href": "index.html#áreas-de-interesse",
+    "title": "W. Neves",
+    "section": "Áreas de Interesse",
+    "text": "Áreas de Interesse\n\nModelagem estatística ecológica\n\nSéries temporais ambientais\n\nEstrutura funcional do zooplâncton\n\nAnálise multivariada\n\nCiência de Dados aplicada à ecologia"
   }
 ]

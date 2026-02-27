@@ -1,32 +1,60 @@
-/* Fonte elegante */
+/* ---------- PALETA OCEÂNICA SOFISTICADA ---------- */
+
+:root {
+  --azul-profundo: #0d1b2a;
+  --azul-medio: #1b263b;
+  --azul-claro: #415a77;
+  --cinza-claro: #f8f9fa;
+  --texto: #1e1e1e;
+}
+
+/* ---------- FUNDO GERAL ---------- */
+
 body {
-  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
-  font-size: 17px;
+  background-color: var(--cinza-claro);
+  color: var(--texto);
+  font-family: "Helvetica Neue", sans-serif;
   line-height: 1.7;
 }
 
-/* Títulos mais fortes */
-h1, h2, h3 {
-  font-weight: 600;
-  letter-spacing: 0.5px;
-}
+/* ---------- NAVBAR ---------- */
 
-/* Navbar mais sofisticada */
 .navbar {
-  font-size: 16px;
+  background-color: white !important;
+  border-bottom: 1px solid #eaeaea;
   font-weight: 500;
 }
 
-/* Melhorar espaçamento */
-.container-fluid {
-  max-width: 1000px;
+/* ---------- HERO SECTION ---------- */
+
+.hero {
+  text-align: center;
+  padding: 100px 20px 80px 20px;
+  background: linear-gradient(135deg, #0d1b2a, #1b263b);
+  color: white;
 }
 
-/* Links elegantes */
-a {
-  text-decoration: none;
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
-a:hover {
-  text-decoration: underline;
+.hero p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* ---------- SEÇÕES ---------- */
+
+.section {
+  padding: 80px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.section h2 {
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: var(--azul-profundo);
 }
