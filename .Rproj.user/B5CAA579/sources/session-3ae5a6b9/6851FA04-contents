@@ -1,0 +1,22 @@
+---
+title: "W. Neves"
+subtitle: "Pesquisador | Análise Quantitativa | Ciência de Dados"
+image: foto-perfil.jpg # Se tiver uma foto na pasta do projeto
+about:
+  template: jolla
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://linkedin.com/in/seu-perfil
+    - icon: github
+      text: Github
+      href: https://github.com/wesneves
+---
+
+Bem-vindo ao meu laboratório digital. Sou pesquisador focado em oceanografia quantitativa, especializado no processamento de séries temporais de 20 anos de dados de clorofila na plataforma continental brasileira.
+
+## Áreas de Interesse
+
+-   Modelagem Estatística em R
+-   Sensoriamento Remoto (Ocean Color)
+-   Filosofia da Ciência (Perspectiva Popperiana)
