@@ -1,1 +1,32 @@
-/* css styles */
+/* Fonte elegante */
+body {
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+/* Títulos mais fortes */
+h1, h2, h3 {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Navbar mais sofisticada */
+.navbar {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Melhorar espaçamento */
+.container-fluid {
+  max-width: 1000px;
+}
+
+/* Links elegantes */
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
