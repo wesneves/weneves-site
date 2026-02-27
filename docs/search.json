@@ -7,13 +7,6 @@
     "text": "Pesquisador | Oceanografia Quantitativa | Ciência de Dados"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
-  },
-  {
     "objectID": "index.html#sobre-mim",
     "href": "index.html#sobre-mim",
     "title": "W. Neves",
@@ -26,5 +19,12 @@
     "title": "W. Neves",
     "section": "Áreas de Interesse",
     "text": "Áreas de Interesse\n\nModelagem estatística ecológica\n\nSéries temporais ambientais\n\nEstrutura funcional do zooplâncton\n\nAnálise multivariada\n\nCiência de Dados aplicada à ecologia"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
   }
 ]
