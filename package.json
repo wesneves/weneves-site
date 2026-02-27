@@ -1,0 +1,7 @@
+{
+  "name": "weneves-site",
+  "private": true,
+  "devDependencies": {
+    "@quarto/netlify-plugin-quarto": "^1.0.0"
+  }
+}
