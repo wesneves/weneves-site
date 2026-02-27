@@ -1,152 +1,155 @@
 /* ========================= */
-/* Tipografia elegante */
+/* Variáveis de Design       */
 /* ========================= */
+:root {
+  --primary-color: #0a3d62;    /* Azul Oceano Profundo */
+  --secondary-color: #38ada9;  /* Verde Água/Coastal */
+  --text-main: #2c2c2c;
+  --text-muted: #555;
+  --bg-light: #f8f9fa;
+  --white: #ffffff;
+  --transition: all 0.3s ease;
+}
 
+/* ========================= */
+/* Base & Tipografia         */
+/* ========================= */
 body {
-  font-family: "Georgia", serif;
-  background-color: #f8f9fa;
-  color: #2c2c2c;
+  /* Sans-serif para leitura, Serif para títulos */
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: var(--bg-light);
+  color: var(--text-main);
   line-height: 1.7;
-  font-size: 18px;
+  font-size: 17px; /* Levemente reduzido para harmonia */
 }
 
-/* ========================= */
-/* Navbar */
-/* ========================= */
-
-.navbar {
-  background-color: white !important;
-  border-bottom: 1px solid #e5e5e5;
+/* Títulos com a elegância da Georgia */
+h1, h2, h3 {
+  font-family: "Georgia", serif;
+  color: var(--primary-color);
+  font-weight: 700;
 }
-
-.navbar-brand {
-  font-weight: 600;
-  font-size: 20px;
-  color: #0a3d62 !important;
-}
-
-.nav-link {
-  color: #444 !important;
-  font-weight: 500;
-}
-
-.nav-link:hover {
-  color: #0a3d62 !important;
-}
-
-/* ========================= */
-/* Títulos */
-/* ========================= */
 
 h1 {
-  font-size: 42px;
-  font-weight: 600;
-  margin-bottom: 10px;
+  font-size: clamp(2.5rem, 5vw, 3.5rem); /* Fonte fluida conforme a tela */
+  margin-bottom: 15px;
 }
 
 h2 {
-  font-size: 28px;
-  margin-top: 50px;
-  margin-bottom: 15px;
-  border-left: 4px solid #0a3d62;
-  padding-left: 12px;
+  font-size: 1.75rem;
+  margin-top: 60px;
+  margin-bottom: 25px;
+  border-left: 5px solid var(--primary-color);
+  padding-left: 15px;
 }
 
 /* ========================= */
-/* Hero Section */
+/* Navbar Refinada           */
 /* ========================= */
-
-.hero {
-  text-align: center;
-  padding: 100px 20px 80px 20px;
+.navbar {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(10px); /* Efeito de vidro moderno */
+  border-bottom: 1px solid #eee;
 }
 
-.hero-subtitle {
-  font-size: 20px;
-  color: #555;
-  margin-top: 10px;
+.navbar-brand {
+  font-family: "Georgia", serif;
+  font-weight: 700;
+  color: var(--primary-color) !important;
 }
 
-.hero-description {
-  max-width: 750px;
-  margin: 30px auto 0 auto;
-  font-size: 18px;
+.nav-link {
+  color: var(--text-muted) !important;
+  font-weight: 500;
+  transition: var(--transition);
 }
 
-/* ========================= */
-/* Links */
-/* ========================= */
-
-a {
-  color: #0a3d62;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-
-/* ========================= */
-/* Largura elegante de conteúdo */
-/* ========================= */
-
-main {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 40px 20px;
+.nav-link:hover {
+  color: var(--primary-color) !important;
 }
 
 /* ========================= */
-/* Hero Box */
+/* Hero Box (Destaque)       */
 /* ========================= */
-
 .hero-box {
   text-align: center;
-  padding: 100px 20px;
-  background: linear-gradient(to bottom, #ffffff, #f1f5f9);
-  border-radius: 12px;
-  margin-bottom: 60px;
+  padding: 80px 40px;
+  background: var(--white);
+  border: 1px solid rgba(10, 61, 98, 0.05);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
+  border-radius: 20px;
+  margin: 40px 0 60px 0;
 }
 
 .subtitle {
-  font-size: 20px;
-  color: #0a3d62;
-  margin-top: 10px;
-  font-weight: 500;
+  font-size: 1.25rem;
+  color: var(--secondary-color);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 .description {
-  max-width: 700px;
-  margin: 30px auto 0 auto;
-  font-size: 18px;
-  color: #444;
+  max-width: 720px;
+  margin: 25px auto 0 auto;
+  font-size: 1.1rem;
+  color: var(--text-muted);
 }
 
 /* ========================= */
-/* Grid moderno */
+/* Grid & Cards de Pesquisa  */
 /* ========================= */
-
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
   margin-top: 40px;
 }
 
 .card {
-  background-color: white;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.05);
-  transition: transform 0.2s ease;
+  background-color: var(--white);
+  padding: 35px;
+  border-radius: 16px;
+  border: 1px solid transparent;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
 }
 
 .card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px);
+  border-color: var(--secondary-color);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
 }
 
 .card h3 {
-  margin-top: 0;
-  color: #0a3d62;
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  color: var(--primary-color);
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-bottom: 0;
+}
+
+/* ========================= */
+/* Links & Utilidades        */
+/* ========================= */
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+
+main {
+  max-width: 1000px; /* Um pouco mais largo para o grid respirar */
+  margin: 0 auto;
+  padding: 20px;
 }

@@ -1,5 +1,6 @@
 ---
 title: ""
+page-layout: full
 ---
 
 <div class="hero-box">
@@ -7,36 +8,47 @@ title: ""
 <h1>Wesley Neves</h1>
 
 <p class="subtitle">
-Oceanógrafo | Ecologia de Comunidades Marinhas | Modelagem Quantitativa
+Oceanógrafo | Ecologia Marinha | Instrutor de Data Science
 </p>
 
 <p class="description">
-Pesquisador com foco em estrutura de comunidades zooplanctônicas,
-modelagem estatística aplicada e análise de séries temporais ambientais.
-Integro métodos quantitativos em R à investigação ecológica marinha.
+Dedicado à compreensão da biodiversidade marinha através de lentes quantitativas. 
+Especialista em ecologia de comunidades zooplanctônicas e modelagem estatística, 
+atuo na interseção entre a oceanografia biológica e a ciência de dados, 
+desenvolvendo soluções analíticas em R para problemas ecológicos complexos.
 </p>
+
+<div class="hero-buttons">
+[Ver Projetos](#lines) [Cursos & Tutoriais](https://seusite.com/cursos){.btn-secondary}
+</div>
 
 </div>
 
 ---
 
-## Linhas de Pesquisa
+## Eixos de Atuação {#lines}
 
-<div class="grid">
+::: {.grid}
 
+::: {.g-col-12 .g-col-md-4}
 <div class="card">
-<h3>Ecologia de Comunidades</h3>
-<p>Análise taxonômica, funcional e filogenética de comunidades marinhas.</p>
+<h3>Ecologia Quantitativa</h3>
+<p>Investigação da estrutura taxonômica e funcional de comunidades marinhas, com ênfase em dinâmicas de zooplâncton em gradientes estuarino-costeiros.</p>
 </div>
+:::
 
+::: {.g-col-12 .g-col-md-4}
 <div class="card">
-<h3>Modelagem Estatística</h3>
-<p>GLMs, GAMs, modelos mistos e análise multivariada aplicada à ecologia.</p>
+<h3>Modelagem Avançada</h3>
+<p>Aplicação de modelos estatísticos (GLMs, GAMs e Modelos Mistos) e análise multivariada para interpretar séries temporais ambientais de longa duração.</p>
 </div>
+:::
 
+::: {.g-col-12 .g-col-md-4}
 <div class="card">
-<h3>Séries Temporais</h3>
-<p>Dinâmica espaço-temporal de zooplâncton em ambientes estuarinos e costeiros.</p>
+<h3>Ensino e Difusão</h3>
+<p>Desenvolvimento de cursos e ferramentas em R voltados para pesquisadores, focando em reprodutibilidade científica e análise de dados aplicada.</p>
 </div>
+:::
 
-</div>
+:::
