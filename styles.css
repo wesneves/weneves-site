@@ -1,9 +1,9 @@
-/* ========================= */
-/* Variáveis de Design       */
-/* ========================= */
+/* ========================================= */
+/* 1. VARIÁVEIS E BASE                       */
+/* ========================================= */
 :root {
-  --primary-color: #0a3d62;    /* Azul Oceano Profundo */
-  --secondary-color: #38ada9;  /* Verde Água/Coastal */
+  --primary-color: #0a3d62;
+  --secondary-color: #38ada9;
   --text-main: #2c2c2c;
   --text-muted: #555;
   --bg-light: #f8f9fa;
@@ -11,51 +11,55 @@
   --transition: all 0.3s ease;
 }
 
-/* ========================= */
-/* Base & Tipografia         */
-/* ========================= */
 body {
-  /* Sans-serif para leitura, Serif para títulos */
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   background-color: var(--bg-light);
   color: var(--text-main);
   line-height: 1.7;
-  font-size: 17px; /* Levemente reduzido para harmonia */
+  font-size: 17px;
 }
 
-/* Títulos com a elegância da Georgia */
-h1, h2, h3 {
+main, .quarto-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* ========================================= */
+/* 2. TIPOGRAFIA                             */
+/* ========================================= */
+h1, h2, h3, .navbar-brand {
   font-family: "Georgia", serif;
   color: var(--primary-color);
   font-weight: 700;
 }
 
-h1 {
-  font-size: clamp(2.5rem, 5vw, 3.5rem); /* Fonte fluida conforme a tela */
-  margin-bottom: 15px;
-}
+h1 { font-size: clamp(2.5rem, 5vw, 3.5rem); margin-bottom: 15px; }
 
 h2 {
   font-size: 1.75rem;
-  margin-top: 60px;
-  margin-bottom: 25px;
+  margin: 60px 0 25px;
   border-left: 5px solid var(--primary-color);
   padding-left: 15px;
 }
 
-/* ========================= */
-/* Navbar Refinada           */
-/* ========================= */
-.navbar {
-  background-color: rgba(255, 255, 255, 0.95) !important;
-  backdrop-filter: blur(10px); /* Efeito de vidro moderno */
-  border-bottom: 1px solid #eee;
+.title { font-size: 2.5rem; margin-top: 2rem; text-align: left; }
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: var(--transition);
 }
 
-.navbar-brand {
-  font-family: "Georgia", serif;
-  font-weight: 700;
-  color: var(--primary-color) !important;
+a:hover { color: var(--secondary-color); }
+
+/* ========================================= */
+/* 3. NAVEGAÇÃO E BOTÕES                     */
+/* ========================================= */
+.navbar {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #eee;
 }
 
 .nav-link {
@@ -64,13 +68,40 @@ h2 {
   transition: var(--transition);
 }
 
-.nav-link:hover {
+.nav-link:hover, .nav-tabs .nav-link.active {
   color: var(--primary-color) !important;
 }
 
-/* ========================= */
-/* Hero Box (Destaque)       */
-/* ========================= */
+.nav-tabs .nav-link.active {
+  background-color: var(--primary-color) !important;
+  color: white !important;
+  border-radius: 8px 8px 0 0;
+}
+
+/* Grupo de Botões */
+.hero-buttons { margin-top: 35px; display: flex; justify-content: center; gap: 15px; }
+
+.btn-primary, .btn-secondary, .btn-lg, .btn-sm {
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: var(--transition);
+  display: inline-block;
+  text-decoration: none;
+}
+
+.btn-primary, .btn-lg { background-color: var(--primary-color); color: white !important; }
+.btn-primary:hover, .btn-lg:hover { background-color: var(--secondary-color); transform: scale(1.05); }
+
+.btn-secondary { border: 2px solid var(--primary-color); color: var(--primary-color) !important; }
+.btn-secondary:hover { background-color: rgba(10, 61, 98, 0.05); }
+
+.btn-lg { padding: 15px 40px; font-size: 1.2rem; border-radius: 50px; }
+.btn-sm { padding: 5px 15px; font-size: 0.85rem; border-radius: 4px; }
+
+/* ========================================= */
+/* 4. COMPONENTES (CARDS E CAIXAS)           */
+/* ========================================= */
 .hero-box {
   text-align: center;
   padding: 80px 40px;
@@ -78,7 +109,7 @@ h2 {
   border: 1px solid rgba(10, 61, 98, 0.05);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
   border-radius: 20px;
-  margin: 40px 0 60px 0;
+  margin: 40px 0 60px;
 }
 
 .subtitle {
@@ -89,16 +120,6 @@ h2 {
   font-weight: 600;
 }
 
-.description {
-  max-width: 720px;
-  margin: 25px auto 0 auto;
-  font-size: 1.1rem;
-  color: var(--text-muted);
-}
-
-/* ========================= */
-/* Grid & Cards de Pesquisa  */
-/* ========================= */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -107,163 +128,57 @@ h2 {
 }
 
 .card {
-  background-color: var(--white);
+  background: var(--white);
   padding: 35px;
   border-radius: 16px;
-  border: 1px solid transparent;
   box-shadow: 0 10px 30px rgba(0,0,0,0.04);
   transition: var(--transition);
   display: flex;
   flex-direction: column;
 }
 
-.card:hover {
-  transform: translateY(-8px);
-  border-color: var(--secondary-color);
-  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+.card:hover { transform: translateY(-8px); border-color: var(--secondary-color); box-shadow: 0 15px 35px rgba(0,0,0,0.08); }
+
+/* Alertas e Callouts */
+.welcome-box, .callout-important, .callout-warning.callout {
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 30px;
 }
 
-.card h3 {
-  font-size: 1.4rem;
-  margin-bottom: 15px;
-  color: var(--primary-color);
-}
+.welcome-box { background: #f0f7f4; border: 1px solid #d1e7dd; color: #155724; text-align: center; }
+.callout-important { border-left: 5px solid var(--secondary-color); background: rgba(56, 173, 169, 0.1); }
+.callout-warning.callout { border-left: 5px solid var(--primary-color); background: var(--bg-light); }
 
-.card p {
-  font-size: 0.95rem;
-  color: var(--text-muted);
-  margin-bottom: 0;
-}
+.download-link { font-weight: 600; text-decoration: underline; font-size: 0.9rem; }
 
-/* ========================= */
-/* Links & Utilidades        */
-/* ========================= */
-a {
-  color: var(--primary-color);
-  text-decoration: none;
-  transition: var(--transition);
-}
-
-a:hover {
-  color: var(--secondary-color);
-}
-
-main {
-  max-width: 1000px; /* Um pouco mais largo para o grid respirar */
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.hero-buttons {
-  margin-top: 35px;
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-}
-
-.btn-primary, .btn-secondary {
-  padding: 12px 25px;
-  border-radius: 30px;
-  font-weight: 600;
-  font-size: 0.95rem;
-  transition: var(--transition);
-}
-
-.btn-primary {
-  background-color: var(--primary-color);
-  color: white !important;
-}
-
-.btn-primary:hover {
-  background-color: var(--secondary-color);
-  transform: scale(1.05);
-}
-
-.btn-secondary {
-  border: 2px solid var(--primary-color);
-  color: var(--primary-color) !important;
-}
-
-.btn-secondary:hover {
-  background-color: rgba(10, 61, 98, 0.05);
-}
-
-/* Caixa de Boas-Vindas */
-.welcome-box {
-  background-color: #f0f7f4;
-  border: 1px solid #d1e7dd;
-  padding: 30px;
-  border-radius: 15px;
-  margin-bottom: 40px;
-  text-align: center;
-  color: #155724;
-}
-
-.welcome-box h3 {
-  margin-top: 0;
-  color: #0a3d62;
-  font-family: "Georgia", serif;
-}
-
-/* Botão de Destaque */
-.btn-lg {
-  display: inline-block;
-  padding: 15px 40px;
-  font-size: 1.2rem;
-  background-color: #0a3d62;
-  color: white !important;
-  border-radius: 50px;
-  text-decoration: none;
-  font-weight: bold;
-  margin-top: 20px;
-  transition: transform 0.2s ease;
-}
-
-.btn-lg:hover {
-  transform: scale(1.05);
-  background-color: #38ada9;
-}
-
-/* Ajuste das abas do Quarto */
-.nav-tabs .nav-link.active {
-  background-color: #0a3d62 !important;
-  color: white !important;
-  border-radius: 8px 8px 0 0;
-}
-
-
-/* Estilo para links de download discretos */
-.download-link {
-  color: #0a3d62;
-  font-weight: 600;
-  text-decoration: underline;
-  font-size: 0.9rem;
-}
-
-.download-link:hover {
-  color: #38ada9;
-}
-
-/* Ajuste na caixa de aviso do Quarto */
-.callout-warning.callout {
-  border-left-color: #0a3d62; /* Cor do seu tema em vez de laranja */
-  background-color: #f8f9fa;
-}
-
-
-/* Callout customizado para o curso */
-.callout-important {
-  border-left: 5px solid var(--secondary-color);
-  background-color: rgba(56, 173, 169, 0.1);
-  padding: 20px;
-  border-radius: 8px;
-  margin: 20px 0;
-}
-
-.btn-sm {
-  padding: 5px 15px;
-  font-size: 0.85rem;
-  background-color: var(--primary-color);
-  color: white !important;
+/* ========================================= */
+/* 5. CÓDIGO (R E QUARTO)                    */
+/* ========================================= */
+code {
+  background: #f1f5f9;
+  color: #e83e8c;
+  padding: 0.2rem 0.4rem;
   border-radius: 4px;
+  font-family: 'Fira Code', monospace;
 }
+
+/* Blocos de código e Saídas do R */
+pre.sourceCode, 
+code.sourceCode, 
+.cell-output-display pre,
+.cell-output pre {
+  background-color: #f8fafc !important;
+  color: #2c3e50 !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 8px !important;
+  padding: 1em;
+  line-height: 1.5;
+}
+
+.cell-output pre {
+  background-color: #ffffff !important;
+  border-left: 4px solid var(--secondary-color) !important;
+}
+
+.sourceCode span { color: inherit; }
