@@ -3,45 +3,39 @@ title: ""
 page-layout: full
 ---
 
-<div class="hero-box">
-  <div class="hero-content">
-    <h1>Wesley Neves</h1>
-    <p class="subtitle">Oceanógrafo | Ecologia Marinha | Modelagem Estatística</p>
-    
-    <p class="description">
-      Integro ecologia de comunidades marinhas e ciência de dados para compreender padrões ecológicos e formar pesquisadores mais quantitativos.
-    </p>
+::: {.hero-box}
+::: {.hero-content}
+# Wesley Neves
 
-    <div class="quote-container">
-      <p class="quote">
-        "A ciência é feita de fatos, como uma casa é feita de pedras; mas um amontoado de fatos não é mais ciência do que um amontoado de pedras é uma casa." 
-        <span class="quote-author">— Henri Poincaré</span>
-      </p>
-    </div>
+[Oceanógrafo | Ecologia Marinha | Modelagem Estatística]{.subtitle}
 
-    <div class="hero-buttons">
-      <a href="about.qmd" class="btn-primary">Minha Trajetória</a>
-      <a href="curso.qmd" class="btn-secondary">Acessar Curso</a>
-    </div>
-  </div>
-</div>
+Integro ecologia de comunidades marinhas e ciência de dados para compreender padrões ecológicos e formar pesquisadores mais quantitativos.
 
-<div class="features-grid">
-  <div class="feature-card">
-    <i class="bi bi-water"></i>
-    <h3>Ecologia de Comunidades</h3>
-    <p>Análise de biodiversidade e estrutura funcional em ambientes estuarinos e costeiros.</p>
-  </div>
-  
-  <div class="feature-card">
-    <i class="bi bi-graph-up"></i>
-    <h3>Modelagem em R</h3>
-    <p>Uso de GLMs, GAMs e análise multivariada para decifrar séries temporais ambientais.</p>
-  </div>
-  
-  <div class="feature-card">
-    <i class="bi bi-mortarboard"></i>
-    <h3>Educação Científica</h3>
-    <p>Capacitação de pesquisadores através do curso "Do Dado ao Artigo".</p>
-  </div>
-</div>
+::: {.quote-container}
+"A ciência é feita de fatos, como uma casa é feita de pedras; mas um amontoado de fatos não é mais ciência do que um amontoado de pedras é uma casa."
+[— Henri Poincaré]{.quote-author}
+:::
+
+::: {.hero-buttons}
+[Minha Trajetória](about.qmd){.btn-primary .btn-lg}
+[Acessar Curso](curso.qmd){.btn-secondary .btn-lg}
+:::
+:::
+:::
+
+::: {.features-grid}
+::: {.feature-card}
+### <i class="bi bi-water"></i> Ecologia de Comunidades
+Análise de biodiversidade e estrutura funcional em ambientes estuarinos e costeiros.
+:::
+
+::: {.feature-card}
+### <i class="bi bi-graph-up"></i> Modelagem em R
+Uso de GLMs, GAMs e análise multivariada para decifrar séries temporais ambientais.
+:::
+
+::: {.feature-card}
+### <i class="bi bi-mortarboard"></i> Educação Científica
+Capacitação de pesquisadores através do curso "Do Dado ao Artigo".
+:::
+:::
