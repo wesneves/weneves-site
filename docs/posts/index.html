@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Wesley Neves</title>
+<title>Blog &amp; Dicas de R – Wesley Neves</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,40 +24,61 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-html/tabby.min.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-html-734cb40618f438257b19a1e532635a32.min.css" rel="stylesheet" append-hash="true" data-mode="light">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/quarto-listing/list.min.js"></script>
+<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-html-734cb40618f438257b19a1e532635a32.min.css" rel="stylesheet" append-hash="true" data-mode="light">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body>
 
 
+<header id="title-block-header">
+<h1 class="title">Blog &amp; Dicas de R</h1>
+
+</header>
 
 
 
-<div class="hero-box">
-<h1>
-Wesley Neves
-</h1>
-<p class="subtitle">
-Biólogo &amp; Cientista de Dados
-</p>
-<p class="description">
-Transformando dados marinhos em conhecimento ecológico através de modelos quantitativos e programação em R.
-</p>
-<div class="hero-buttons">
-<p><a href="./about.html" class="btn-primary">Saiba mais sobre mim</a> <a href="./curso.html" class="btn-secondary">Ver Curso</a></p>
-</div>
-</div>
 
 
 <script id="quarto-html-after-body" type="application/javascript">
@@ -468,4 +489,215 @@ Transformando dados marinhos em conhecimento ecológico através de modelos quan
 
 
 
-</body></html>
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="Ug==" data-listing-date-sort="1740020400000" data-listing-file-modified-sort="1771935695827" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="16" data-listing-word-count-sort="3175">
+<div class="thumbnail"><a href="../posts/NA_Value.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../posts/NA_Value.html" class="no-external">Tratamento de Dados Ausentes</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('Ug=='); return false;">R</div>
+
+</div>
+<div class="delink listing-description"><a href="../posts/NA_Value.html" class="no-external">
+
+</a></div>
+</div>
+<div class="metadata">
+<a href="../posts/NA_Value.html" class="no-external">
+<div class="listing-date">
+20 de fev. de 2025
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="Ug==" data-listing-date-sort="1691722800000" data-listing-file-modified-sort="1771935695828" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1200">
+<div class="thumbnail"><a href="../posts/Package_in_R.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../posts/Package_in_R.html" class="no-external">Faça seu pacote no RStudio do Zero</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('Ug=='); return false;">R</div>
+
+</div>
+<div class="delink listing-description"><a href="../posts/Package_in_R.html" class="no-external">
+
+</a></div>
+</div>
+<div class="metadata">
+<a href="../posts/Package_in_R.html" class="no-external">
+<div class="listing-date">
+11 de ago. de 2023
+</div>
+<div class="listing-author">
+Wesley Neves
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-categories="R2l0SHVi" data-listing-date-sort="1643943600000" data-listing-file-modified-sort="1771935695829" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="318">
+<div class="thumbnail"><a href="../posts/Token.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../posts/Token.html" class="no-external">Token do GitHub para o RStudio</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('R2l0SHVi'); return false;">GitHub</div>
+
+</div>
+<div class="delink listing-description"><a href="../posts/Token.html" class="no-external">
+
+</a></div>
+</div>
+<div class="metadata">
+<a href="../posts/Token.html" class="no-external">
+<div class="listing-date">
+4 de fev. de 2022
+</div>
+<div class="listing-author">
+Wesley Neves
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="3" data-categories="R2l0SHVi" data-listing-date-sort="1642388400000" data-listing-file-modified-sort="1771935695826" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="206">
+<div class="thumbnail"><a href="../posts/GitHub.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../posts/GitHub.html" class="no-external">GitHub no R: Sincronizando repositórios no RStudio</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('R2l0SHVi'); return false;">GitHub</div>
+
+</div>
+<div class="delink listing-description"><a href="../posts/GitHub.html" class="no-external">
+
+</a></div>
+</div>
+<div class="metadata">
+<a href="../posts/GitHub.html" class="no-external">
+<div class="listing-date">
+17 de jan. de 2022
+</div>
+<div class="listing-author">
+Wesley Neves
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="4" data-categories="Ug==" data-listing-date-sort="1642388400000" data-listing-file-modified-sort="1771935695860" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="291">
+<div class="thumbnail"><a href="../posts/rmakdown.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../posts/rmakdown.html" class="no-external">Rmarkdown</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('Ug=='); return false;">R</div>
+
+</div>
+<div class="delink listing-description"><a href="../posts/rmakdown.html" class="no-external">
+
+</a></div>
+</div>
+<div class="metadata">
+<a href="../posts/rmakdown.html" class="no-external">
+<div class="listing-date">
+17 de jan. de 2022
+</div>
+<div class="listing-author">
+Wesley Neves
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="5" data-categories="Ug==" data-listing-date-sort="1642042800000" data-listing-file-modified-sort="1771935695825" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="390">
+<div class="thumbnail"><a href="../posts/Dicas_R.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../posts/Dicas_R.html" class="no-external">Dicas para melhorar a Sintaxe no R</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('Ug=='); return false;">R</div>
+
+</div>
+<div class="delink listing-description"><a href="../posts/Dicas_R.html" class="no-external">
+
+</a></div>
+</div>
+<div class="metadata">
+<a href="../posts/Dicas_R.html" class="no-external">
+<div class="listing-date">
+13 de jan. de 2022
+</div>
+<div class="listing-author">
+Wesley Neves
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="6" data-categories="Ug==" data-listing-date-sort="1641956400000" data-listing-file-modified-sort="1771935695859" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="757">
+<div class="thumbnail"><a href="../posts/Sobre_R.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../posts/Sobre_R.html" class="no-external">Sobre o Programa R</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('Ug=='); return false;">R</div>
+
+</div>
+<div class="delink listing-description"><a href="../posts/Sobre_R.html" class="no-external">
+
+</a></div>
+</div>
+<div class="metadata">
+<a href="../posts/Sobre_R.html" class="no-external">
+<div class="listing-date">
+12 de jan. de 2022
+</div>
+<div class="listing-author">
+Wesley Neves
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">Nenhum item correspondente</div>
+</div></body></html>
