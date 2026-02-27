@@ -31,5 +31,23 @@
   },
   "posts/index.qmd": {
     "index.html": "f01f88b2"
+  },
+  "posts/GitHub.qmd": {
+    "GitHub.html": "27de3c0a"
+  },
+  "posts/NA_Value.qmd": {
+    "NA_Value.html": "dcdeeeea"
+  },
+  "posts/Package_in_R.qmd": {
+    "Package_in_R.html": "dcb4fb9a"
+  },
+  "posts/rmakdown.qmd": {
+    "rmakdown.html": "49f2af72"
+  },
+  "posts/Sobre_R.qmd": {
+    "Sobre_R.html": "296c25c8"
+  },
+  "posts/Token.qmd": {
+    "Token.html": "81964140"
   }
 }

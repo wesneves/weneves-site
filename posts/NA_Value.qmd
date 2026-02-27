@@ -3,7 +3,13 @@ title: "Tratamento de Dados Ausentes"
 date: "2025-02-20"
 categories: ["R"]
 tags: ["Curadoria de Dados", "NA Value", "Machine Learning", "Random Forest"]
-output: html_document
+format:
+  html:
+    theme: none
+    css: styles.css
+    highlight-style: github    # Define um estilo de código claro e profissional
+    code-copy: true           # Adiciona o botão de copiar
+    code-overflow: wrap       # Melhora a leitura em dispositivos móveis
 ---
 
 ```{r setup, include=FALSE}

@@ -67,11 +67,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-html-734cb40618f438257b19a1e532635a32.min.css" rel="stylesheet" append-hash="true" data-mode="light">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-html-abba60c7b863426f1dd778d2b3fd6e6d.min.css" rel="stylesheet" append-hash="true" data-mode="light">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-065a5179aebd64318d7ea99d77b64a9e.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 
 
 <link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -83,28 +84,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p class="date">2025-02-20</p>
 </header>
 
-<nav id="TOC" role="doc-toc">
-    <h2 id="toc-title">Nesta página</h2>
-   
-  <ul>
-  <li><a href="#tratamento-de-valores-ausentesna-no-programa-r" id="toc-tratamento-de-valores-ausentesna-no-programa-r">Tratamento de Valores Ausentes(NA) no Programa R</a>
-  <ul>
-  <li><a href="#como-ocorrem-os-dados-ausentes" id="toc-como-ocorrem-os-dados-ausentes">Como ocorrem os dados ausentes?</a></li>
-  <li><a href="#como-resolver-esse-problema" id="toc-como-resolver-esse-problema">Como resolver esse problema?</a></li>
-  </ul></li>
-  <li><a href="#tratamento-dos-dados-no-r" id="toc-tratamento-dos-dados-no-r">Tratamento dos dados no R</a>
-  <ul>
-  <li><a href="#detecção-de-valores-ausentes" id="toc-detecção-de-valores-ausentes">Detecção de valores ausentes:</a></li>
-  <li><a href="#o-que-fazer-com-os-valores-ausentes-encontrados" id="toc-o-que-fazer-com-os-valores-ausentes-encontrados">O que fazer com os valores ausentes encontrados?</a>
-  <ul>
-  <li><a href="#poucos-na---substituir-esses-valores-pela-média-mediana-ou-valor-fixo" id="toc-poucos-na---substituir-esses-valores-pela-média-mediana-ou-valor-fixo">Poucos NA - Substituir esses valores pela média, mediana ou valor fixo</a></li>
-  <li><a href="#muitos-na-em-poucas-colunas---remover-as-colunas" id="toc-muitos-na-em-poucas-colunas---remover-as-colunas">Muitos NA em poucas colunas - Remover as colunas</a></li>
-  <li><a href="#muitos-na-dispersos-em-várias-linhas---remover-as-linhas" id="toc-muitos-na-dispersos-em-várias-linhas---remover-as-linhas">Muitos NA dispersos em várias linhas - Remover as linhas</a></li>
-  <li><a href="#para-dados-muito-importantes-podemos-substituir-o-na-pelo-valor-anterior-isso-para-séries-temporais-ou-podemos-utilizar-modelos-de-imputação-interpolação-ou-machine-learning" id="toc-para-dados-muito-importantes-podemos-substituir-o-na-pelo-valor-anterior-isso-para-séries-temporais-ou-podemos-utilizar-modelos-de-imputação-interpolação-ou-machine-learning">Para dados muito importantes podemos substituir o NA pelo valor anterior (<strong>isso para séries temporais</strong>) ou podemos utilizar Modelos de Imputação (<strong>interpolação ou machine learning</strong>)</a></li>
-  </ul></li>
-  </ul></li>
-  </ul>
-</nav>
+
 <h1 id="tratamento-de-valores-ausentesna-no-programa-r">Tratamento de Valores Ausentes(NA) no Programa R</h1>
 <p>A detecção e o tratamento de dados ausentes são componentes essenciais em qualquer processo de análise de dados, uma vez que a presença de valores faltantes pode distorcer os resultados de forma significativa. A qualidade e a integridade dos dados são fundamentais para garantir que as conclusões obtidas a partir das análises sejam confiáveis e representativas da realidade que se deseja investigar.</p>
 <h2 id="como-ocorrem-os-dados-ausentes" class="anchored">Como ocorrem os dados ausentes?</h2>

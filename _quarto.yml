@@ -24,8 +24,7 @@ format:
     theme: none
     css: styles.css
     cache: false
-    toc: true
-    toc-title: "Nesta página"
+    toc: false
     lang: pt
 
 render:
