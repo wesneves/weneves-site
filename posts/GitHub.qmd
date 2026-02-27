@@ -4,13 +4,6 @@ author: "Wesley Neves"
 date: "2022-01-17"
 categories: ["GitHub"]
 tags: ["Git", "GitHub", "LINUX", "README FILE"]
-format:
-  html:
-    theme: none
-    css: styles.css
-    highlight-style: github    # Define um estilo de código claro e profissional
-    code-copy: true           # Adiciona o botão de copiar
-    code-overflow: wrap       # Melhora a leitura em dispositivos móveis
 ---
 
 # Instalando o Git:

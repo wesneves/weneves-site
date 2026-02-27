@@ -4,13 +4,6 @@ author: "Wesley Neves"
 date: "2022-02-04"
 categories: ["GitHub"]
 tags: ["Token", "usethis()"]
-format:
-  html:
-    theme: none
-    css: styles.css
-    highlight-style: github    # Define um estilo de código claro e profissional
-    code-copy: true           # Adiciona o botão de copiar
-    code-overflow: wrap       # Melhora a leitura em dispositivos móveis
 ---
 
 # O que é e para que preciso do TOKEN?

@@ -7,7 +7,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Wesley Neves">
-<meta name="dcterms.date" content="2023-08-11">
 
 <title>Faça seu pacote no RStudio do Zero – Wesley Neves</title>
 <style>
@@ -22,7 +21,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-.display.math{display: block; text-align: center; margin: 0.5rem auto;}
 /* CSS for syntax highlighting */
 html { -webkit-text-size-adjust: 100%; }
 pre > code.sourceCode { white-space: pre; position: relative; }
@@ -61,35 +59,145 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </style>
 
 
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-html-abba60c7b863426f1dd778d2b3fd6e6d.min.css" rel="stylesheet" append-hash="true" data-mode="light">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-065a5179aebd64318d7ea99d77b64a9e.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-527b3a5651f3f64c9f262051b38e9d3e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Nenhum resultado",
+    "search-matching-documents-text": "documentos correspondentes",
+    "search-copy-link-title": "Copiar link para a busca",
+    "search-hide-matches-text": "Esconder correspondências adicionais",
+    "search-more-match-text": "mais correspondência neste documento",
+    "search-more-matches-text": "mais correspondências neste documento",
+    "search-clear-button-title": "Limpar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Procurar"
+  }
+}</script>
 
 
 <link rel="stylesheet" href="../styles.css">
-<link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body class="nav-fixed fullcontent quarto-light">
 
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    </a>
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Wesley Neves</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Procurar"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Alternar de navegação" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html"> 
+<span class="menu-text">Sobre</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../curso.html"> 
+<span class="menu-text">🎓 Curso Sympla</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../posts/index.html"> 
+<span class="menu-text">Blog/Dicas</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content">
 
-<header id="title-block-header">
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
 <h1 class="title">Faça seu pacote no RStudio do Zero</h1>
-<p class="author">Wesley Neves</p>
+  <div class="quarto-categories">
+    <div class="quarto-category">R</div>
+  </div>
+  </div>
 
-<p class="date">2023-08-11</p>
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Autor</div>
+    <div class="quarto-title-meta-contents">
+             <p>Wesley Neves </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Data de Publicação</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">11 de agosto de 2023</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
 </header>
 
 
-<h1 id="procedimentos-iniciais">Procedimentos Iniciais</h1>
+<section id="procedimentos-iniciais" class="level1">
+<h1>Procedimentos Iniciais</h1>
 <p>Este tutorial visa lhe ajudar a criar um pacote no R com os minimos procedimentos necessários para tal. Para uma abordagem completa eu lhe recomendo o livro <a href="https://r-pkgs.org">site</a> do autor Hadley Wickham e Jennifer Bryan.</p>
-<h2 id="etapa-1-pacotes-necessários" class="anchored">Etapa 1: pacotes necessários:</h2>
+<section id="etapa-1-pacotes-necessários" class="level2">
+<h2 class="anchored" data-anchor-id="etapa-1-pacotes-necessários">Etapa 1: pacotes necessários:</h2>
 <p>Basicamente precisamos de apenas dois pacotes que são <code>devtools</code> e <code>roxygen2</code>, portanto é necessário baixar esses dois pacotes antes de criarmos o nosso (OBS: no LINUX o pacote <code>devtools</code> possuí várias dependências, consulte o material do pacote e baixe essas dependências antes de tentar instalá-lo, já no Windows, a interface consegue instalar quase todas as dependências, mas mesmo assim, fique atento as dependências do pacote.)</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">'devtools'</span>)</span>
@@ -97,14 +205,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"klutometis/roxygen"</span>)</span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(roxygen2)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<h2 id="etapa-2-criando-o-diretório-do-pacote" class="anchored">Etapa 2: criando o diretório do pacote:</h2>
+</section>
+<section id="etapa-2-criando-o-diretório-do-pacote" class="level2">
+<h2 class="anchored" data-anchor-id="etapa-2-criando-o-diretório-do-pacote">Etapa 2: criando o diretório do pacote:</h2>
 <p>É necessário criar um diretório de trabalho para anexar todas as informações do pacote que nesse exemplo eu chamo de CháRev</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">setwd</span>(<span class="st">"cole aqui seu diretório de trabalho"</span>)</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">create</span>(<span class="st">"CháRev"</span>)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>Se você olhar no diretório criado perceberá que existe um Documento chamado <code>DESCRIPTION</code> esse documento é importante e nele contém todas as informações sobre o pacote como o nome do pabote, a versão, o título do pacote os autores, se o pacote possui alguma dependência, licença e uma breve descrição do que o pacote faz. No nosso diretório existe uma pasta chamada R, nessa pasta você deve colocar todas as suas rotinas em script (.R) (Claro que eu devo assumir que você têm todas as rotinas/funções prontas, afinal, um pacote requer funções prévias para funcionar).</p>
-<h2 id="etapa-3-adicionando-funções" class="anchored">Etapa 3: Adicionando funções:</h2>
+</section>
+<section id="etapa-3-adicionando-funções" class="level2">
+<h2 class="anchored" data-anchor-id="etapa-3-adicionando-funções">Etapa 3: Adicionando funções:</h2>
 <p>Essa é a etapa principal na criação de um pacote, e devemos prestar bastante atenção nessa etapa, pois os arquivos que serão adicionados a essa pasta devem conter além da instrução da rotina, algumas informações que serão necessárias para serem anexadas em um documento .Rd. Nesse exemplo eu irei adicionar uma função chamada chárev(), que irá simular um resultado de um chá de revelação. Para criar tal função, antes é necessário primeiro adicionar o título dessa função com os seguintes argumentos:</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">#' chárev(result) Função simulando um possível chá de revelação para determinar o sexo e o nome da criança</span></span>
@@ -126,7 +238,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>Na pasta R eu posso criar várias funções em arquivos .R separados, nesse exemplo eu apenas vou adicionar um função.</p>
 <p>Aqui, o tag <code>@export</code> é uma sintaxe tag do pacote <code>roxygen2</code>, essa sintaxe é importante e permite que a função que acabamos de criar chamada chárev() seja adicionada ao NAMESPACE do pacote, logo a função será exposta para os usuários utilizarem.</p>
-<h2 id="etapa-4-função-document" class="anchored">Etapa 4: função document()</h2>
+</section>
+<section id="etapa-4-função-document" class="level2">
+<h2 class="anchored" data-anchor-id="etapa-4-função-document">Etapa 4: função document()</h2>
 <p>Depois de concluir toda a descrição e estruturação das suas funções na página R é necessário rodar a seguinte função</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">document</span>()</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
@@ -139,12 +253,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  ggplot2</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>Se seu pacote precisa utilizar funções simples como as funções do pacote <code>dplyr</code>por exemplo, opte por utilizar o operador <code>::</code></p>
-<h2 id="etapa-6-instalar-o-pacote" class="anchored">Etapa 6: Instalar o pacote</h2>
+</section>
+<section id="etapa-6-instalar-o-pacote" class="level2">
+<h2 class="anchored" data-anchor-id="etapa-6-instalar-o-pacote">Etapa 6: Instalar o pacote</h2>
 <p>Podemos utilizar a função <code>devtools::install()</code> para instalar seu pacote R na biblioteca do sistema R, sendo assim você pode carregar seu pacote com</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(CháRev)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<h2 id="etapa-7-adicionando-seu-pacote-ao-github" class="anchored">Etapa 7: Adicionando seu Pacote ao GitHub</h2>
+</section>
+<section id="etapa-7-adicionando-seu-pacote-ao-github" class="level2">
+<h2 class="anchored" data-anchor-id="etapa-7-adicionando-seu-pacote-ao-github">Etapa 7: Adicionando seu Pacote ao GitHub</h2>
 <p>O primeiro passo é declarar para o Git quem é você, informando seu nomee e-mail associoado a determinada conta Git, podemos fazer isso pelo simples comando no <code>terminal</code>do RStudio:</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>git config –global user.name <span class="st">'Seu Nome'</span></span>
@@ -172,12 +290,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>É interessante adicionar é um README arquivo (ou um versão Markdown , README.md). Isso aparecerá bem em seu repositório GitHub, abaixo a lista de arquivos. Esse arquivo é um arquivo Rmarkdown simples onde você pode descrever com detalhes o seu pacote.</p>
 
 
+</section>
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
-    const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
-    tabsets.forEach(function(tabset) {
-      const tabby = new Tabby('#' + tabset.id);
-    });
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {
@@ -276,7 +394,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         },
         interactive: true,
         interactiveBorder: 10,
-        theme: 'light-border',
+        theme: 'quarto',
         placement: 'bottom-start',
       };
       if (contentFn) {
@@ -576,6 +694,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     }
   });
   </script>
+</div> <!-- /content -->
 
 
 

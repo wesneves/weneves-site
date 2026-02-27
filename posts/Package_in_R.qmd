@@ -4,13 +4,6 @@ author: "Wesley Neves"
 date: "2023-08-11"
 categories: ["R"]
 tags: ["RStudio", "Pacotes", "devtools", "roxygen2"]
-format:
-  html:
-    theme: none
-    css: styles.css
-    highlight-style: github    # Define um estilo de código claro e profissional
-    code-copy: true           # Adiciona o botão de copiar
-    code-overflow: wrap       # Melhora a leitura em dispositivos móveis
 ---
 
 ```{r setup, include=FALSE}

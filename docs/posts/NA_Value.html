@@ -6,7 +6,6 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2025-02-20">
 
 <title>Tratamento de Dados Ausentes – Wesley Neves</title>
 <style>
@@ -21,7 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-.display.math{display: block; text-align: center; margin: 0.5rem auto;}
 /* CSS for syntax highlighting */
 html { -webkit-text-size-adjust: 100%; }
 pre > code.sourceCode { white-space: pre; position: relative; }
@@ -60,86 +58,214 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </style>
 
 
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-html-734cb40618f438257b19a1e532635a32.min.css" rel="stylesheet" append-hash="true" data-mode="light">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-065a5179aebd64318d7ea99d77b64a9e.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-527b3a5651f3f64c9f262051b38e9d3e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Nenhum resultado",
+    "search-matching-documents-text": "documentos correspondentes",
+    "search-copy-link-title": "Copiar link para a busca",
+    "search-hide-matches-text": "Esconder correspondências adicionais",
+    "search-more-match-text": "mais correspondência neste documento",
+    "search-more-matches-text": "mais correspondências neste documento",
+    "search-clear-button-title": "Limpar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Procurar"
+  }
+}</script>
 
 
 <link rel="stylesheet" href="../styles.css">
-<link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body class="nav-fixed fullcontent quarto-light">
 
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    </a>
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Wesley Neves</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Procurar"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Alternar de navegação" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html"> 
+<span class="menu-text">Sobre</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../curso.html"> 
+<span class="menu-text">🎓 Curso Sympla</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../posts/index.html"> 
+<span class="menu-text">Blog/Dicas</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content">
 
-<header id="title-block-header">
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
 <h1 class="title">Tratamento de Dados Ausentes</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">R</div>
+  </div>
+  </div>
 
-<p class="date">2025-02-20</p>
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Data de Publicação</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">20 de fevereiro de 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
 </header>
 
 
-<h1 id="tratamento-de-valores-ausentesna-no-programa-r">Tratamento de Valores Ausentes(NA) no Programa R</h1>
+<section id="tratamento-de-valores-ausentesna-no-programa-r" class="level1">
+<h1>Tratamento de Valores Ausentes(NA) no Programa R</h1>
 <p>A detecção e o tratamento de dados ausentes são componentes essenciais em qualquer processo de análise de dados, uma vez que a presença de valores faltantes pode distorcer os resultados de forma significativa. A qualidade e a integridade dos dados são fundamentais para garantir que as conclusões obtidas a partir das análises sejam confiáveis e representativas da realidade que se deseja investigar.</p>
-<h2 id="como-ocorrem-os-dados-ausentes" class="anchored">Como ocorrem os dados ausentes?</h2>
+<section id="como-ocorrem-os-dados-ausentes" class="level2">
+<h2 class="anchored" data-anchor-id="como-ocorrem-os-dados-ausentes">Como ocorrem os dados ausentes?</h2>
 <p>Dados ausentes podem ocorrer por diversos motivos, como erros de coleta, falhas técnicas, ou até mesmo por escolhas experimentais. Esses valores faltantes, se não tratados adequadamente, podem levar a viéses nas estimativas, perda de poder estatístico e redução da precisão dos modelos preditivos.</p>
-<h2 id="como-resolver-esse-problema" class="anchored">Como resolver esse problema?</h2>
+</section>
+<section id="como-resolver-esse-problema" class="level2">
+<h2 class="anchored" data-anchor-id="como-resolver-esse-problema">Como resolver esse problema?</h2>
 <p>A forma como lidamos com os dados ausentes pode afetar diretamente a validade das análises subsequentes. Estratégias como remoção de dados ausentes, imputação ou modelagem específica para dados ausentes são frequentemente utilizadas para contornar esse problema. A escolha da abordagem depende do tipo de dados, do volume de valores ausentes e dos objetivos da pesquisa. O objetivo final é garantir que as conclusões extraídas não sejam enviesadas ou imprecisas devido à presença desses dados faltantes, proporcionando assim análises mais robustas e decisões mais informadas.</p>
-<h1 id="tratamento-dos-dados-no-r">Tratamento dos dados no R</h1>
-<h2 id="detecção-de-valores-ausentes" class="anchored">Detecção de valores ausentes:</h2>
+</section>
+</section>
+<section id="tratamento-dos-dados-no-r" class="level1">
+<h1>Tratamento dos dados no R</h1>
+<section id="detecção-de-valores-ausentes" class="level2">
+<h2 class="anchored" data-anchor-id="detecção-de-valores-ausentes">Detecção de valores ausentes:</h2>
 <p>A Função que mostra uma tabela bruta com valores lógicos identificando células vazias é</p>
-<blockquote>
+<blockquote class="blockquote">
 <p>is.na(Objeto))</p>
 </blockquote>
 <p>Essa função não é tao interessante para ser usada inicialmente na nossa curadoria de dados, pra isso, podemos utilizar uma função que irá nos responder logicamente (TRUE or FALSE) se o nosso conjunto de dados tem ou não valores ausentes, para isso podemos contar com a ajuda da função <em>any</em>()</p>
-<blockquote>
+<blockquote class="blockquote">
 <p>any(is.na(Objeto))</p>
 </blockquote>
 <p>A partir do resultado dessa função, podemos perguntar ao R quais linhas e colunas estão os valores ausentes:</p>
-<blockquote>
+<blockquote class="blockquote">
 <p>which(is.na(Objeto), arr.ind = TRUE)</p>
 </blockquote>
 <p>Se o nosso conjunto de dados possuir muitos valores ausentes, a lista dessa chamada de função será grande, logo, é mais intuitivo perguntar ao R quantos valores ausentes cada coluna que o meu conjunto de dados possui:</p>
-<blockquote>
+<blockquote class="blockquote">
 <p>colSums(is.na(Objeto))</p>
 </blockquote>
-<h2 id="o-que-fazer-com-os-valores-ausentes-encontrados" class="anchored">O que fazer com os valores ausentes encontrados?</h2>
+</section>
+<section id="o-que-fazer-com-os-valores-ausentes-encontrados" class="level2">
+<h2 class="anchored" data-anchor-id="o-que-fazer-com-os-valores-ausentes-encontrados">O que fazer com os valores ausentes encontrados?</h2>
 <p>Existem três alternativas que podemos utilizar para nos livrar dessa incoveniência, sendo elas: excluir, substituir ou estimar dados em detrimento dos valores ausentes. Escolher entre cada uma dessas opções dependerá da quantidade de valores ausentes encontrados no meu conjunto de dados.</p>
-<h3 id="poucos-na---substituir-esses-valores-pela-média-mediana-ou-valor-fixo" class="anchored">Poucos NA - Substituir esses valores pela média, mediana ou valor fixo</h3>
-<h4 id="média" class="anchored">Média</h4>
+<section id="poucos-na---substituir-esses-valores-pela-média-mediana-ou-valor-fixo" class="level3">
+<h3 class="anchored" data-anchor-id="poucos-na---substituir-esses-valores-pela-média-mediana-ou-valor-fixo">Poucos NA - Substituir esses valores pela média, mediana ou valor fixo</h3>
+<section id="média" class="level4">
+<h4 class="anchored" data-anchor-id="média">Média</h4>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (col <span class="cf">in</span> <span class="fu">colnames</span>(SeuDataFrame)) { <span class="cf">if</span> (<span class="fu">is.numeric</span>(SeuDataFrame[[col]])) { SeuDataFrame[[col]][<span class="fu">is.na</span>(SeuDataFrame[[col]])] <span class="ot">&lt;-</span> <span class="fu">mean</span>(SeuDataFrame[[col]], <span class="at">na.rm =</span> <span class="cn">TRUE</span>) } }</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<h4 id="valor-fixo-substituir-por-0" class="anchored">Valor Fixo, substituir por 0</h4>
+</section>
+<section id="valor-fixo-substituir-por-0" class="level4">
+<h4 class="anchored" data-anchor-id="valor-fixo-substituir-por-0">Valor Fixo, substituir por 0</h4>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>SeuDataFrame[<span class="fu">is.na</span>(SeuDataFrame)] <span class="ot">&lt;-</span> <span class="dv">0</span></span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<h3 id="muitos-na-em-poucas-colunas---remover-as-colunas" class="anchored">Muitos NA em poucas colunas - Remover as colunas</h3>
+</section>
+</section>
+<section id="muitos-na-em-poucas-colunas---remover-as-colunas" class="level3">
+<h3 class="anchored" data-anchor-id="muitos-na-em-poucas-colunas---remover-as-colunas">Muitos NA em poucas colunas - Remover as colunas</h3>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>SeuDataFrame <span class="ot">&lt;-</span> SeuDataFrame[, <span class="fu">colSums</span>(<span class="fu">is.na</span>(SeuDataFrame)) <span class="sc">==</span> <span class="dv">0</span>] <span class="co"># Remove todas as colunas com qualquer NA</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>SeuDataFrame <span class="ot">&lt;-</span> SeuDataFrame[, <span class="fu">colMeans</span>(<span class="fu">is.na</span>(SeuDataFrame)) <span class="sc">&lt;</span> <span class="fl">0.5</span>] <span class="co"># se quiser remover apenas colunas com mais de 50% de NA:</span></span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<h3 id="muitos-na-dispersos-em-várias-linhas---remover-as-linhas" class="anchored">Muitos NA dispersos em várias linhas - Remover as linhas</h3>
+</section>
+<section id="muitos-na-dispersos-em-várias-linhas---remover-as-linhas" class="level3">
+<h3 class="anchored" data-anchor-id="muitos-na-dispersos-em-várias-linhas---remover-as-linhas">Muitos NA dispersos em várias linhas - Remover as linhas</h3>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>SeuDataFrame <span class="ot">&lt;-</span> <span class="fu">na.omit</span>(SeuDataFrame) <span class="co"># Remove todas as linhas que tenham pelo menos um NA</span></span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<h3 id="para-dados-muito-importantes-podemos-substituir-o-na-pelo-valor-anterior-isso-para-séries-temporais-ou-podemos-utilizar-modelos-de-imputação-interpolação-ou-machine-learning" class="anchored">Para dados muito importantes podemos substituir o NA pelo valor anterior (<strong>isso para séries temporais</strong>) ou podemos utilizar Modelos de Imputação (<strong>interpolação ou machine learning</strong>)</h3>
-<h4 id="séries-temporais" class="anchored">Séries Temporais:</h4>
+</section>
+<section id="para-dados-muito-importantes-podemos-substituir-o-na-pelo-valor-anterior-isso-para-séries-temporais-ou-podemos-utilizar-modelos-de-imputação-interpolação-ou-machine-learning" class="level3">
+<h3 class="anchored" data-anchor-id="para-dados-muito-importantes-podemos-substituir-o-na-pelo-valor-anterior-isso-para-séries-temporais-ou-podemos-utilizar-modelos-de-imputação-interpolação-ou-machine-learning">Para dados muito importantes podemos substituir o NA pelo valor anterior (<strong>isso para séries temporais</strong>) ou podemos utilizar Modelos de Imputação (<strong>interpolação ou machine learning</strong>)</h3>
+<section id="séries-temporais" class="level4">
+<h4 class="anchored" data-anchor-id="séries-temporais">Séries Temporais:</h4>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(zoo) </span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>SeuDataFrame <span class="ot">&lt;-</span> <span class="fu">na.locf</span>(SeuDataFrame) <span class="co"># Preenche com o último valor não-NA</span></span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<h4 id="modelos-de-imputação" class="anchored">Modelos de Imputação:</h4>
+</section>
+<section id="modelos-de-imputação" class="level4">
+<h4 class="anchored" data-anchor-id="modelos-de-imputação">Modelos de Imputação:</h4>
 <p>Os <strong>modelos de imputação</strong> são técnicas utilizadas para substituir valores ausentes em um conjunto de dados por estimativas baseadas nas informações disponíveis. A imputação é uma etapa crucial em processos analíticos, especialmente quando a quantidade de dados ausentes é significativa. Ela visa melhorar a qualidade dos dados, preservando sua integridade e evitando que a perda de informações prejudique as conclusões das análises.</p>
 <p>Existem várias abordagens para imputação, que podem ser classificadas em <strong>simples</strong> ou <strong>complexas</strong>. A escolha do modelo de imputação depende do tipo de dados, da natureza dos valores ausentes e do impacto potencial na análise. Abaixo, estão algumas das principais abordagens:</p>
-<h5 id="imputação-por-médiamedianamoda-imputação-simples" class="anchored">1. <strong>Imputação por Média/Mediana/Moda (Imputação Simples)</strong></h5>
+<section id="imputação-por-médiamedianamoda-imputação-simples" class="level5">
+<h5 class="anchored" data-anchor-id="imputação-por-médiamedianamoda-imputação-simples">1. <strong>Imputação por Média/Mediana/Moda (Imputação Simples)</strong></h5>
 <p>A imputação simples é uma das mais diretas e consiste em substituir os valores ausentes por uma estatística central dos dados observados.</p>
 <ul>
 <li><p><strong>Média</strong>: Substituir valores ausentes pela média dos valores observados em uma variável numérica.</p></li>
@@ -151,7 +277,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><p>Não leva em consideração as correlações entre variáveis.</p></li>
 <li><p>Pode reduzir a variabilidade dos dados e introduzir viés, especialmente em distribuições assimétricas.</p></li>
 </ul>
-<h5 id="imputação-por-regressão" class="anchored">2. <strong>Imputação por Regressão</strong></h5>
+</section>
+<section id="imputação-por-regressão" class="level5">
+<h5 class="anchored" data-anchor-id="imputação-por-regressão">2. <strong>Imputação por Regressão</strong></h5>
 <p>Este modelo utiliza uma relação estatística entre a variável com dados ausentes e outras variáveis do conjunto de dados para prever os valores ausentes.</p>
 <ul>
 <li><p><strong>Imputação por Regressão Linear</strong>: Usa uma equação de regressão linear para prever os valores ausentes com base em outras variáveis numéricas.</p></li>
@@ -162,7 +290,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><p>Supõe que a relação entre as variáveis é linear (no caso de regressão linear).</p></li>
 <li><p>Pode ser inadequada se a relação entre as variáveis for complexa ou não-linear.</p></li>
 </ul>
-<h5 id="imputação-por-k-vizinhos-mais-próximos-knn" class="anchored">3. <strong>Imputação por K-Vizinhos Mais Próximos (KNN)</strong></h5>
+</section>
+<section id="imputação-por-k-vizinhos-mais-próximos-knn" class="level5">
+<h5 class="anchored" data-anchor-id="imputação-por-k-vizinhos-mais-próximos-knn">3. <strong>Imputação por K-Vizinhos Mais Próximos (KNN)</strong></h5>
 <p>A imputação por KNN substitui os valores ausentes com base em uma média ponderada dos valores dos <strong>k vizinhos mais próximos</strong>. Este método leva em consideração a similaridade entre os casos para preencher os valores ausentes.</p>
 <ul>
 <li><strong>KNN Imputation</strong>: A variável ausente é estimada pela média (ou mediana) dos valores das observações mais próximas, com base em uma medida de distância (por exemplo, distância Euclidiana).</li>
@@ -210,7 +340,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(comparacao)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>No próximo tópico será abordado testes para verificar o poder do teste e o tamanho de efeito, tente aplicar aqui também para verificar a confiabilidade da estimativa.</p>
-<h5 id="imputação-por-modelos-baseados-em-árvores-ex-missforest" class="anchored">4. <strong>Imputação por Modelos Baseados em Árvores (ex: MissForest)</strong></h5>
+</section>
+<section id="imputação-por-modelos-baseados-em-árvores-ex-missforest" class="level5">
+<h5 class="anchored" data-anchor-id="imputação-por-modelos-baseados-em-árvores-ex-missforest">4. <strong>Imputação por Modelos Baseados em Árvores (ex: MissForest)</strong></h5>
 <p>O <strong>MissForest</strong> é um modelo de imputação baseado em <strong>árvores de decisão</strong>. Ele trata dados ausentes como variáveis a serem preditas e usa o algoritmo <strong>Random Forest</strong> para prever esses valores ausentes. A imputação é feita de forma iterativa, onde os valores imputados em cada iteração são utilizados para ajustar o modelo até que uma solução estável seja alcançada.</p>
 <p><strong>Vantagens</strong>:</p>
 <ul>
@@ -389,7 +521,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a><span class="fu">wilcox_effsize</span>(dados, <span class="at">formula =</span> valores <span class="sc">~</span> grupo)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>O valor de efeito (0.0187) está muito próximo de zero e a classificação como “small” sugere que, embora exista uma diferença entre os grupos Imputados e Reais, essa diferença é muito pequena.</p>
-<h5 id="imputação-múltipla-multiple-imputation---pacote-mice-no-r" class="anchored">5. <strong>Imputação Múltipla (Multiple Imputation - Pacote mice no R)</strong></h5>
+</section>
+<section id="imputação-múltipla-multiple-imputation---pacote-mice-no-r" class="level5">
+<h5 class="anchored" data-anchor-id="imputação-múltipla-multiple-imputation---pacote-mice-no-r">5. <strong>Imputação Múltipla (Multiple Imputation - Pacote mice no R)</strong></h5>
 <p>A imputação múltipla é uma técnica mais avançada e robusta, na qual os valores ausentes são imputados várias vezes, criando diferentes conjuntos de dados “imputados”. Cada conjunto de dados é analisado separadamente e as estimativas finais são combinadas de forma a refletir a incerteza sobre os valores imputados.</p>
 <ul>
 <li><strong>MICE (Multivariate Imputation by Chained Equations)</strong>: Método popular de imputação múltipla, no qual um conjunto de equações é utilizado para imputar as variáveis ausentes uma de cada vez, de forma iterativa.</li>
@@ -405,7 +539,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><p>Não é tão boa para dados categóricos.</p></li>
 <li><p>Mais caro computacionalmente, pois envolve múltiplas imputações e análises.</p></li>
 </ul>
-<h5 id="imputação-com-redes-neurais-pacote-h2o-no-r" class="anchored">6. <strong>Imputação com Redes Neurais (Pacote h2o no R)</strong></h5>
+</section>
+<section id="imputação-com-redes-neurais-pacote-h2o-no-r" class="level5">
+<h5 class="anchored" data-anchor-id="imputação-com-redes-neurais-pacote-h2o-no-r">6. <strong>Imputação com Redes Neurais (Pacote h2o no R)</strong></h5>
 <p>As redes neurais podem ser usadas para imputar dados faltantes, especialmente em conjuntos de dados grandes e complexos. Redes neurais artificiais podem aprender padrões complexos entre as variáveis para prever valores ausentes.</p>
 <p><strong>Vantagens</strong>:</p>
 <ul>
@@ -417,7 +553,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><p>Requer uma quantidade considerável de dados para ser eficaz.</p></li>
 <li><p>Pode ser difícil de interpretar, tornando-a menos transparente que outros métodos.</p></li>
 </ul>
-<h5 id="conclusão" class="anchored"><strong>Conclusão</strong></h5>
+</section>
+<section id="conclusão" class="level5">
+<h5 class="anchored" data-anchor-id="conclusão"><strong>Conclusão</strong></h5>
 <p>A escolha do modelo de imputação depende do <strong>tipo de dados</strong>, da <strong>quantidade de dados ausentes</strong>, do <strong>objetivo da análise</strong> e da <strong>complexidade computacional</strong> que você está disposto a enfrentar. Embora as técnicas simples como a imputação por média ou mediana possam ser rápidas e fáceis de implementar, abordagens mais sofisticadas, como <strong>imputação múltipla</strong> ou <strong>MissForest</strong>, são mais robustas e geralmente fornecem resultados mais precisos e confiáveis, especialmente em conjuntos de dados mais complexos.</p>
 <p>Cada técnica tem suas vantagens e desvantagens, e é importante analisar os dados de forma cuidadosa antes de escolher a abordagem mais apropriada para o tratamento de dados ausentes.</p>
 <p><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/gml.min.css"></p>
@@ -425,12 +563,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script>hljs.highlightAll();</script>
 
 
+</section>
+</section>
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
-    const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
-    tabsets.forEach(function(tabset) {
-      const tabby = new Tabby('#' + tabset.id);
-    });
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {
@@ -529,7 +670,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         },
         interactive: true,
         interactiveBorder: 10,
-        theme: 'light-border',
+        theme: 'quarto',
         placement: 'bottom-start',
       };
       if (contentFn) {
@@ -829,6 +970,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     }
   });
   </script>
+</div> <!-- /content -->
 
 
 

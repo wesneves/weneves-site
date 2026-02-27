@@ -3,13 +3,6 @@ title: "Tratamento de Dados Ausentes"
 date: "2025-02-20"
 categories: ["R"]
 tags: ["Curadoria de Dados", "NA Value", "Machine Learning", "Random Forest"]
-format:
-  html:
-    theme: none
-    css: styles.css
-    highlight-style: github  # Isso força o fundo branco/claro e cores de sintaxe padrão
-    code-block-bg: "#f8fafc" # Define explicitamente a cor de fundo do bloco (cinza muito claro)
-    code-block-border-left: "#0a3d62" # Adiciona uma borda lateral com o seu azul oceano
 ---
 
 ```{r setup, include=FALSE}
