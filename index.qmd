@@ -1,41 +1,25 @@
 ---
-title: "W. Neves"
-subtitle: "Pesquisador | Análise Quantitativa | Ciência de Dados"
-image: foto-perfil.jpg # Se tiver uma foto na pasta do projeto
-about:
-  template: jolla
-  links:
-    - icon: linkedin
-      text: LinkedIn
-      href: https://linkedin.com/in/seu-perfil
-    - icon: github
-      text: Github
-      href: https://github.com/wesneves
+title: ""
 ---
 
 <div class="hero">
-  <h1>Wesley Neves</h1>
-  <p>Pesquisador | Oceanografia Quantitativa | Ciência de Dados</p>
+
+# W. Neves
+
+<div class="hero-subtitle">
+Pesquisador | Análise Quantitativa | Ciência de Dados
 </div>
 
-<div class="section">
-
-## Sobre Mim
-
-Sou pesquisador focado em oceanografia quantitativa, com experiência em análise de séries temporais ambientais e modelagem estatística aplicada à ecologia marinha.
-
-Meu trabalho integra estatística, programação em R e interpretação ecológica para compreender padrões na plataforma continental brasileira.
-
+<div class="hero-description">
+Bem-vindo ao meu laboratório digital. Desenvolvo pesquisas em oceanografia quantitativa,
+com foco em séries temporais e modelagem ecológica na plataforma continental brasileira.
 </div>
 
-<div class="section">
+</div>
 
 ## Áreas de Interesse
 
-- Modelagem estatística ecológica  
+- Ecologia de comunidades marinhas  
+- Modelagem estatística em R  
 - Séries temporais ambientais  
-- Estrutura funcional do zooplâncton  
-- Análise multivariada  
-- Ciência de Dados aplicada à ecologia  
-
-</div>
+- Ciência de dados aplicada à oceanografia  

@@ -1,64 +1,87 @@
-body {
-  background-color: red !important;
-}
-
-/* ---------- PALETA OCEÂNICA SOFISTICADA ---------- */
-
-:root {
-  --azul-profundo: #0d1b2a;
-  --azul-medio: #1b263b;
-  --azul-claro: #415a77;
-  --cinza-claro: #f8f9fa;
-  --texto: #1e1e1e;
-}
-
-/* ---------- FUNDO GERAL ---------- */
+/* ========================= */
+/* Tipografia elegante */
+/* ========================= */
 
 body {
-  background-color: var(--cinza-claro);
-  color: var(--texto);
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "Georgia", serif;
+  background-color: #f8f9fa;
+  color: #2c2c2c;
   line-height: 1.7;
+  font-size: 18px;
 }
 
-/* ---------- NAVBAR ---------- */
+/* ========================= */
+/* Navbar */
+/* ========================= */
 
 .navbar {
   background-color: white !important;
-  border-bottom: 1px solid #eaeaea;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.navbar-brand {
+  font-weight: 600;
+  font-size: 20px;
+  color: #0a3d62 !important;
+}
+
+.nav-link {
+  color: #444 !important;
   font-weight: 500;
 }
 
-/* ---------- HERO SECTION ---------- */
+.nav-link:hover {
+  color: #0a3d62 !important;
+}
+
+/* ========================= */
+/* Títulos */
+/* ========================= */
+
+h1 {
+  font-size: 42px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 28px;
+  margin-top: 50px;
+  margin-bottom: 15px;
+  border-left: 4px solid #0a3d62;
+  padding-left: 12px;
+}
+
+/* ========================= */
+/* Hero Section */
+/* ========================= */
 
 .hero {
   text-align: center;
   padding: 100px 20px 80px 20px;
-  background: linear-gradient(135deg, #0d1b2a, #1b263b);
-  color: white;
 }
 
-.hero h1 {
-  font-size: 3rem;
-  font-weight: 700;
-  letter-spacing: 1px;
+.hero-subtitle {
+  font-size: 20px;
+  color: #555;
+  margin-top: 10px;
 }
 
-.hero p {
-  font-size: 1.2rem;
-  opacity: 0.9;
+.hero-description {
+  max-width: 750px;
+  margin: 30px auto 0 auto;
+  font-size: 18px;
 }
 
-/* ---------- SEÇÕES ---------- */
+/* ========================= */
+/* Links */
+/* ========================= */
 
-.section {
-  padding: 80px 20px;
-  max-width: 900px;
-  margin: auto;
+a {
+  color: #0a3d62;
+  text-decoration: none;
 }
 
-.section h2 {
-  font-weight: 700;
-  margin-bottom: 30px;
-  color: var(--azul-profundo);
+a:hover {
+  text-decoration: underline;
 }
