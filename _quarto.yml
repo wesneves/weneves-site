@@ -10,8 +10,6 @@ website:
     background: white
     search: true
     left:
-      - href: index.qmd
-        text: Home
       - href: about.qmd
         text: Sobre
       - href: curso.qmd

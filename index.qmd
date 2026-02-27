@@ -7,16 +7,11 @@ page-layout: full
 
 <h1>Wesley Neves</h1>
 
-<p class="subtitle">Biólogo & Cientista de Dados</p>
+<p class="subtitle">Oceanógrafo | Ecologia Marinha | Modelagem Estatística</p>
 
 <p class="description">
-Transformando dados marinhos em conhecimento ecológico através de modelos quantitativos e programação em R.
+Integro ecologia de comunidades marinhas e ciência de dados para compreender padrões ecológicos e formar pesquisadores mais quantitativos.
 </p>
 
-<div class="hero-buttons">
-  <a href="about.qmd" class="btn-primary">Saiba mais sobre mim</a>
-  <a href="curso.qmd" class="btn-secondary">Ver Curso</a>
-  <a href="posts/index.qmd" class="btn-secondary">Blog</a>
-</div>
 
 </div>
