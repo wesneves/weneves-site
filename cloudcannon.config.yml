@@ -1,5 +1,16 @@
 # cloudcannon.config.yml
-source: _site
-_inputs:
-  title:
-    type: text
+collections_config:
+  pages:
+    name: Páginas
+    path: /
+    output: true
+    filter:
+      base: none
+      include_extensions:
+        - .qmd
+        - .md
+    icon: description
+
+# Define onde o site "pronto" fica para o CloudCannon visualizar
+source: /
+output: _site
