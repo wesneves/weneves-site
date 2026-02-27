@@ -2,24 +2,41 @@
 title: ""
 ---
 
-<div class="hero">
+<div class="hero-box">
 
-# W. Neves
+<h1>Wesley Neves</h1>
 
-<div class="hero-subtitle">
-Pesquisador | Análise Quantitativa | Ciência de Dados
+<p class="subtitle">
+Oceanógrafo | Ecologia de Comunidades Marinhas | Modelagem Quantitativa
+</p>
+
+<p class="description">
+Pesquisador com foco em estrutura de comunidades zooplanctônicas,
+modelagem estatística aplicada e análise de séries temporais ambientais.
+Integro métodos quantitativos em R à investigação ecológica marinha.
+</p>
+
 </div>
 
-<div class="hero-description">
-Bem-vindo ao meu laboratório digital. Desenvolvo pesquisas em oceanografia quantitativa,
-com foco em séries temporais e modelagem ecológica na plataforma continental brasileira.
+---
+
+## Linhas de Pesquisa
+
+<div class="grid">
+
+<div class="card">
+<h3>Ecologia de Comunidades</h3>
+<p>Análise taxonômica, funcional e filogenética de comunidades marinhas.</p>
+</div>
+
+<div class="card">
+<h3>Modelagem Estatística</h3>
+<p>GLMs, GAMs, modelos mistos e análise multivariada aplicada à ecologia.</p>
+</div>
+
+<div class="card">
+<h3>Séries Temporais</h3>
+<p>Dinâmica espaço-temporal de zooplâncton em ambientes estuarinos e costeiros.</p>
 </div>
 
 </div>
-
-## Áreas de Interesse
-
-- Ecologia de comunidades marinhas  
-- Modelagem estatística em R  
-- Séries temporais ambientais  
-- Ciência de dados aplicada à oceanografia  

@@ -21,4 +21,5 @@ format:
   html:
     theme: none
     css: styles.css
+    cache: false
     toc: true
