@@ -52,11 +52,11 @@ O toque final: transformar códigos em documentos profissionais e relatórios di
 
 ## 📌 Informações Práticas
 
-* **📅 Início:** Amanhã, dia 28, às **08:00h**.
+* **📅 Início:** 28/02/2026 , às **08:00h**.
 * **⏳ Carga Horária:** 40 horas com emissão de certificado.
 * **🎥 Formato:** Aulas ao vivo com suporte prático.
 
-[Acessar Sala Virtual no Sympla](https://www.sympla.com.br/evento-online/do-dado-ao-artigo-analise-quantitativa-no-r-modelagem-multivariada-e-producao-cientifica/3315580){.btn-primary .btn-lg}
+[Acessar Evento Sympla](https://www.sympla.com.br/evento-online/do-dado-ao-artigo-analise-quantitativa-no-r-modelagem-multivariada-e-producao-cientifica/3315580){.btn-primary .btn-lg}
 
 ---
 
@@ -71,7 +71,7 @@ Para garantir a integridade dos scripts desenvolvidos em aula, os arquivos abaix
 | Conteúdo | Link de Acesso | Formato |
 |:---------|:--------------:|:-------:|
 | Script e Conteúdo - Aula 1 | [Acessar Pasta](https://drive.google.com/file/d/12-reRf1z4hOwa8xvMT9TN9YS1wtGWBgO/view?usp=sharing){.download-link} | .ZIP (Protegido) |
-| Script e Conteúdo - Aula 2 | [Acessar Pasta](https://link-do-drive-aqui){.download-link} | .ZIP (Protegido) |
+| Script e Conteúdo - Aula 2 | [Acessar Pasta](https://drive.google.com/file/d/1EmFM45gp_hRd4swTruvphvKwg1CDztT3/view?usp=drive_link){.download-link} | .ZIP (Protegido) |
 | Script e Conteúdo - Aula 3 | [Acessar Pasta](https://link-do-drive-aqui){.download-link} | .ZIP (Protegido) |
 | Script e Conteúdo - Aula 4 | [Acessar Pasta](https://link-do-drive-aqui){.download-link} | .ZIP (Protegido) |
 | Script e Conteúdo - Aula 5 | [Acessar Pasta](https://link-do-drive-aqui){.download-link} | .ZIP (Protegido) |

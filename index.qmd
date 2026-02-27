@@ -16,6 +16,7 @@ Transformando dados marinhos em conhecimento ecológico através de modelos quan
 <div class="hero-buttons">
   <a href="about.qmd" class="btn-primary">Saiba mais sobre mim</a>
   <a href="curso.qmd" class="btn-secondary">Ver Curso</a>
+  <a href="posts/index.qmd" class="btn-secondary">Blog</a>
 </div>
 
 </div>
