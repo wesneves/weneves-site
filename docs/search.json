@@ -37,9 +37,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "\nWesley Neves\n",
+    "title": "Wesley Neves",
     "section": "",
-    "text": "Oceanógrafo | Ecologia Marinha | Modelagem Estatística\n\n\nIntegro ecologia de comunidades marinhas e ciência de dados para compreender padrões ecológicos e formar pesquisadores mais quantitativos."
+    "text": "&lt;h1&gt;Wesley Neves&lt;/h1&gt;\n&lt;p class=\"subtitle\"&gt;Oceanógrafo | Ecologia Marinha | Modelagem Estatística&lt;/p&gt;\n\n&lt;p class=\"description\"&gt;\n  Integro ecologia de comunidades marinhas e ciência de dados para compreender padrões ecológicos e formar pesquisadores mais quantitativos.\n&lt;/p&gt;\n\n&lt;div class=\"quote-container\"&gt;\n  &lt;p class=\"quote\"&gt;\n    \"A ciência é feita de fatos, como uma casa é feita de pedras; mas um amontoado de fatos não é mais ciência do que um amontoado de pedras é uma casa.\" \n    &lt;span class=\"quote-author\"&gt;— Henri Poincaré&lt;/span&gt;\n  &lt;/p&gt;\n&lt;/div&gt;\n\n&lt;div class=\"hero-buttons\"&gt;\n  &lt;a href=\"about.qmd\" class=\"btn-primary\"&gt;Minha Trajetória&lt;/a&gt;\n  &lt;a href=\"curso.qmd\" class=\"btn-secondary\"&gt;Acessar Curso&lt;/a&gt;\n&lt;/div&gt;\n\n\n\n\n&lt;i class=\"bi bi-water\"&gt;&lt;/i&gt;\n&lt;h3&gt;Ecologia de Comunidades&lt;/h3&gt;\n&lt;p&gt;Análise de biodiversidade e estrutura funcional em ambientes estuarinos e costeiros.&lt;/p&gt;\n\n\n&lt;i class=\"bi bi-graph-up\"&gt;&lt;/i&gt;\n&lt;h3&gt;Modelagem em R&lt;/h3&gt;\n&lt;p&gt;Uso de GLMs, GAMs e análise multivariada para decifrar séries temporais ambientais.&lt;/p&gt;\n\n\n&lt;i class=\"bi bi-mortarboard\"&gt;&lt;/i&gt;\n&lt;h3&gt;Educação Científica&lt;/h3&gt;\n&lt;p&gt;Capacitação de pesquisadores através do curso \"Do Dado ao Artigo\".&lt;/p&gt;"
   },
   {
     "objectID": "about.html",
