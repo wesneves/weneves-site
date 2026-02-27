@@ -1,0 +1,85 @@
+---
+title: "Do Dado ao Artigo"
+subtitle: "Análise Quantitativa no R: Modelagem, Multivariada e Produção Científica"
+author: "Wesley de Oliveira Neves"
+date: "2026-02-27"
+---
+
+::: {.welcome-box}
+### 👋 Boas-vindas ao Futuro da sua Análise de Dados
+Este treinamento foi desenhado para transformar a sua relação com dados científicos. Vamos superar a barreira do código básico para alcançar uma produção científica **robusta, reprodutível e visualmente impecável**. Da limpeza dos dados à submissão do artigo, o R será seu maior aliado.
+:::
+
+## 🗺️ Roteiro da Jornada
+
+::: {.panel-tabset}
+
+### 💻 Módulo 1: Fundamentos & Tidyverse
+*12 horas | O alicerce da manipulação moderna*
+
+Neste módulo, dominamos o fluxo de trabalho profissional, garantindo que você nunca mais se perca em planilhas confusas.
+
+* **Aula 01:** O Ecossistema R e RStudio (Instalação e Lógica de Objetos).
+* **Aula 02:** Manipulação com `dplyr`: O poder do Pipe (`|>`) para filtros, seleções e transformações.
+* **Aula 03:** Visualização com `ggplot2`: A gramática dos gráficos para publicações de alto impacto.
+
+### 🌿 Módulo 2: Ecologia & Estatística
+*12 horas | Onde a teoria encontra o código*
+
+Aplicamos ferramentas estatísticas e ecológicas em dados reais, focando na interpretação biológica dos resultados.
+
+* **Aula 04:** Modelagem Estatística: De testes clássicos (ANOVA/t) aos Modelos Lineares Generalizados (GLM).
+* **Aula 05:** Ecologia de Comunidades I: Diversidade, Riqueza e o indispensável pacote `vegan`.
+* **Aula 06:** Ecologia de Comunidades II: Análises Multivariadas (PCA, nMDS e PERMANOVA).
+
+### ⚙️ Módulo 3: Desenvolvimento
+*8 horas | De usuário a desenvolvedor*
+
+Automatize tarefas repetitivas e aprenda a organizar seu próprio fluxo de ferramentas.
+
+* **Aula 07:** Programação Funcional: Automatização com a família `apply` e o pacote `purrr`.
+* **Aula 08:** Engenharia de Funções e Pacotes: Como criar suas próprias ferramentas e documentá-las.
+
+### 📄 Módulo 4: Produção Científica
+*8 horas | A apresentação final da ciência*
+
+O toque final: transformar códigos em documentos profissionais e relatórios dinâmicos.
+
+* **Aula 09:** Comunicação com RMarkdown e LaTeX: Inserção de equações e controle de chunks.
+* **Aula 10:** Customização Web e Projeto Final: CSS personalizado e a entrega do seu relatório integrativo.
+
+:::
+
+## 📌 Informações Práticas
+
+* **📅 Início:** Amanhã, dia 28, às **08:00h**.
+* **⏳ Carga Horária:** 40 horas com emissão de certificado.
+* **🎥 Formato:** Aulas ao vivo com suporte prático.
+
+[Acessar Sala Virtual no Sympla](https://www.sympla.com.br/evento-online/do-dado-ao-artigo-analise-quantitativa-no-r-modelagem-multivariada-e-producao-cientifica/3315580){.btn-primary .btn-lg}
+
+---
+
+## 🔐 Área Exclusiva do Aluno
+
+::: {.callout-warning collapse="true"}
+## Clique para expandir: Materiais e Scripts das Aulas
+Para garantir a integridade dos scripts desenvolvidos em aula, os arquivos abaixo estão compactados e protegidos por senha. 
+
+**A senha foi disponibilizada no chat da sala virtual e no e-mail de boas-vindas do Sympla.**
+
+| Conteúdo | Link de Acesso | Formato |
+|:---------|:--------------:|:-------:|
+| Script e Conteúdo - Aula 1 | [Acessar Pasta](https://drive.google.com/file/d/12-reRf1z4hOwa8xvMT9TN9YS1wtGWBgO/view?usp=sharing){.download-link} | .ZIP (Protegido) |
+| Script e Conteúdo - Aula 2 | [Acessar Pasta](https://link-do-drive-aqui){.download-link} | .ZIP (Protegido) |
+| Script e Conteúdo - Aula 3 | [Acessar Pasta](https://link-do-drive-aqui){.download-link} | .ZIP (Protegido) |
+| Script e Conteúdo - Aula 4 | [Acessar Pasta](https://link-do-drive-aqui){.download-link} | .ZIP (Protegido) |
+| Script e Conteúdo - Aula 5 | [Acessar Pasta](https://link-do-drive-aqui){.download-link} | .ZIP (Protegido) |
+| Script e Conteúdo - Aula 6 | [Acessar Pasta](https://link-do-drive-aqui){.download-link} | .ZIP (Protegido) |
+| Script e Conteúdo - Aula 7 | [Acessar Pasta](https://link-do-drive-aqui){.download-link} | .ZIP (Protegido) |
+| Script e Conteúdo - Aula 8 | [Acessar Pasta](https://link-do-drive-aqui){.download-link} | .ZIP (Protegido) |
+| Script e Conteúdo - Aula 9 | [Acessar Pasta](https://link-do-drive-aqui){.download-link} | .ZIP (Protegido) |
+| Script e Conteúdo - Aula 10 | [Acessar Pasta](https://link-do-drive-aqui){.download-link} | .ZIP (Protegido) |
+
+*Problemas com o acesso? Entre em contato pelo chat do Sympla.*
+:::

@@ -4,5 +4,29 @@
   },
   "about.qmd": {
     "about.html": "f8df5262"
+  },
+  "curso.qmd": {
+    "curso.html": "d6073666"
+  },
+  "posts/Dicas_R.Rmd": {
+    "Dicas_R.html": "2653853f"
+  },
+  "posts/GitHub.Rmd": {
+    "GitHub.html": "be3683a0"
+  },
+  "posts/NA_Value.Rmd": {
+    "NA_Value.html": "f2df19df"
+  },
+  "posts/Package_in_R.Rmd": {
+    "Package_in_R.html": "3a788ecd"
+  },
+  "posts/rmakdown.Rmd": {
+    "rmakdown.html": "db2f2f4a"
+  },
+  "posts/Sobre_R.Rmd": {
+    "Sobre_R.html": "790287fc"
+  },
+  "posts/Token.Rmd": {
+    "Token.html": "00260a0a"
   }
 }

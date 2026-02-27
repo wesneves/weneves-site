@@ -1,0 +1,48 @@
+---
+title: "Token do GitHub para o RStudio"
+author: "Wesley Neves"
+date: "2022-02-04"
+categories: ["GitHub"]
+tags: ["Token", "usethis()"]
+output: html_document
+---
+
+# O que é e para que preciso do TOKEN?
+
+Precisamos criar um token, pois quando interagimos com um servidor Git remoto (como o GitHub, por exemplo) é necessário incluir credenciais na solicitação, isso acontece na hora que em que estamos utilizando o RStudio e precisamos sincronizar/enviar as alterações feitas no RStudio para o GitHub, para isso será necessário utilizar o comando **commit** e o comando **push** na aba **git** do RStudio. Tal credenciamento prova que somos um usuário específico do GitHub que tem permissão para fazer o que estivermos pedindo, já que quaisquer alterações realizadas no nosso repositório é mostrado no GitHub pela credencial do usuário.
+
+A senha que nós utilizamos para fazer login no site do GitHub *NÃO* é uma credencial aceitável ao conversar com o GitHub como um servidor Git, graças a uma atulização de segurança na plataforma. Por isso é necessário a criação de um TOKEN para realizar a sincronização entre o RStudio e o GitHub.
+
+# Criando o TOKEN no RStudio
+
+-   Definir seu nome de usuário GitHub e o seu email vinculado
+
+`usethis :: use_git_config( user.name  =  " SeuNome " , user.email  =  " seu@email.com " )`
+
+-   Pacotes necessários para criar o Token:
+
+`install.packages(c("gh", "usethis", "gitcreds", "credentials"))`
+
+-   Crie um token de acesso pessoal para a autenticação
+
+`usethis::create_github_token()`
+
+> Essa linha de comando configura o seu token abrindo uma janela no navegador onde irá pedir a confirmação da senha no GitHub, após executar esse comando devemos copiar o token gerado, para tal faz-se necessário estabelecer um prazo de validade para o token e algumas permissões adicionais.
+
+-   Defina seu token no RStudio com o pacote credentials:
+
+``
+
+`credentials::set_github_pat("seuTOKEN")`
+
+-   Reinicie o R!
+
+-   Verifique as Configurações:
+
+`usethis :: git_sitrep()`
+
+Com esse comando iremos notar algumas informações sobre nosso perfil, além disso o relatório feito deve conter alguma informação sobre o token de acesso pessoal.
+
+Para verificarmos o nosso TOKEN é necessário utilizar o comando: `gh::gh_whoami()`
+
+O seguinte comando revela o nosso token: `gitcreds::gitcreds_get()$password`

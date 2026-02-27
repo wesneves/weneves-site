@@ -4,22 +4,33 @@ project:
 
 website:
   title: "Wesley Neves"
+  description: "Oceanógrafo | Ecologia Marinha | Data Science"
+  # Favicon opcional (se tiver um ícone na pasta raiz)
+  # favicon: logo.png 
+  
   navbar:
+    background: white
+    search: true
     left:
       - href: index.qmd
-        text: Início
-      - href: research.qmd
-        text: Pesquisa
-      - href: teaching.qmd
-        text: Ensino
-      - href: cv.qmd
-        text: CV
-      - href: contact.qmd
-        text: Contato
+        text: Home
+      - href: about.qmd
+        text: Sobre
+      - href: curso.qmd
+        text: "🎓 Curso Sympla" # Adicionei um emoji para destacar
+      - href: posts/index.qmd  
+        text: Blog/Dicas
 
 format:
   html:
-    theme: none
+    theme: none # Mantendo seu CSS puro
     css: styles.css
     cache: false
     toc: true
+    toc-title: "Nesta página"
+    lang: pt # Define o idioma do site para português
+
+# Garante que o Quarto processe os arquivos dentro da pasta posts
+render:
+  - "*.qmd"
+  - "posts/*.qmd"

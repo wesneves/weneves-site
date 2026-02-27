@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Wesley Neves">
+<meta name="dcterms.date" content="2022-01-13">
 
-<title>Wesley Neves</title>
+<title>Dicas para melhorar a Sintaxe no R – Wesley Neves</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,43 +23,122 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-html/tabby.min.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-html-734cb40618f438257b19a1e532635a32.min.css" rel="stylesheet" append-hash="true" data-mode="light">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-html-734cb40618f438257b19a1e532635a32.min.css" rel="stylesheet" append-hash="true" data-mode="light">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body>
 
 
+<header id="title-block-header">
+<h1 class="title">Dicas para melhorar a Sintaxe no R</h1>
+<p class="author">Wesley Neves</p>
 
+<p class="date">2022-01-13</p>
+</header>
 
-
-<div class="hero-box">
-<h1>
-Wesley Neves
-</h1>
-<p class="subtitle">
-Biólogo &amp; Cientista de Dados
-</p>
-<p class="description">
-Transformando dados marinhos em conhecimento ecológico através de modelos quantitativos e programação em R.
-</p>
-<div class="hero-buttons">
-<p><a href="./about.html" class="btn-primary">Saiba mais sobre mim</a> <a href="projects.qmd" class="btn-secondary">Ver Projetos</a></p>
+<nav id="TOC" role="doc-toc">
+    <h2 id="toc-title">Nesta página</h2>
+   
+  <ul>
+  <li><a href="#dicas-para-melhorar-a-sintaxe-no-r." id="toc-dicas-para-melhorar-a-sintaxe-no-r.">Dicas para Melhorar a Sintaxe no R.</a>
+  <ul>
+  <li><a href="#melhorando-o-script" id="toc-melhorando-o-script">Melhorando o Script</a></li>
+  <li><a href="#utilizando-chaves" id="toc-utilizando-chaves">Utilizando chaves</a></li>
+  </ul></li>
+  </ul>
+</nav>
+<h1 id="dicas-para-melhorar-a-sintaxe-no-r.">Dicas para Melhorar a Sintaxe no R.</h1>
+<p>Para facilitar a visualização das linhas de comando desenvolvidas no programa RStudio é aconselhável realizar essas modificações no programa que se referem ao diagnóstico do código escrito:</p>
+<p><em>Tools &gt; Global options &gt; Code &gt; Editing. Marque todas as opções em General;</em></p>
+<p><em>Tools &gt; Global options &gt; Code &gt; Display, Marque todas as opções;</em></p>
+<p><em>Tools &gt; Global options &gt; Code &gt; Diagnostics. Marque todas as opções em R Diagnostics.</em></p>
+<p>Com essas configurações as linhas de comando estarão estruturadas com cores que distinguem diversas estruturas como funções, espaçamentos etc.</p>
+<h2 id="melhorando-o-script" class="anchored">Melhorando o Script</h2>
+<p>Existem alguns pacotes que automatizam a forma que organizamos nossas linhas de comando, o pacote <em><code>styler (função styler:::style_active_file())</code></em> e o <em><code>formatR</code></em> formatam nossas linhas de comando contidas em um diretório ou scrip para facilitar a compreensão sintática dos comandos. para mais exemplos acesse a <a href="https://yihui.org/formatr">página</a></p>
+<p>Um dos erros mais comuns na sintaxe de um código é o seu espaçamento, no geral devemos colocar espaçamento entre a maioria dos operadores básicos do R, exceto pelos operadores :, :: e :::, e sempre é recomendado utilizar um espaço após a vírgula. Podemos exemplificar como seria a sintaxe ideal para determinado comando, vamos utilizar a seguinte linha de comando como exemplo:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>fun1 <span class="ot">&lt;-</span> <span class="st">"desviopadrao&lt;-sqrt(var(dados_normais))"</span></span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>Observamos que a forma sintática utilizada nesse comando está bastante confusa sem os devidos espaçamentos, para verificarmos a melhor forma que poderíamos escrever esse comando é só utilizar a função <em><code>style_text(fun1)</code></em>, do pacote <em><code>style</code>,</em> mas antes de executar essa função no RStudio precisaremos instalar 3 pacotes que são: <em><code>styler</code>, <code>prettycode</code> e <code>rstudioapi</code>,</em> para tanto, vamos utilizar a função <em>combine <code>c()</code>:</em></p>
+<p><code>install.packages(c("prettycode", "styler", "rstudioapi"))</code></p>
+<p>Em seguida iremos utilizar o comando <em>styler::style_text(fun1)</em></p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>styler<span class="sc">::</span><span class="fu">style_text</span>(fun1)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Could not use `colored = TRUE`, as the package prettycode is not installed.
+Please install it if you want to see colored output or see
+`?styler::print.vertical()` for more information.</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>desviopadrao &lt;- sqrt(var(dados_normais))</code></pre>
 </div>
 </div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>comando <span class="ot">&lt;-</span> <span class="st">"media&lt;-mean(x+1/length(x),na.rm=TRUE)"</span></span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>styler<span class="sc">::</span><span class="fu">style_text</span>(comando)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Could not use `colored = TRUE`, as the package prettycode is not installed.
+Please install it if you want to see colored output or see
+`?styler::print.vertical()` for more information.</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>media &lt;- mean(x + 1 / length(x), na.rm = TRUE)</code></pre>
+</div>
+</div>
+<h2 id="utilizando-chaves" class="anchored">Utilizando chaves</h2>
+<p>Quando usamos chaves em um comando, devemos evitar abri-lo e fechá-lo na mesma linha. E ainda, quando é função, as linhas de comando inseridas dentro das chaves, inserimos um recuo de dois espaços para entendermos a hierarquização das funções, isto é, função dentro de função.</p>
+<p>No demais, devemos estar atentos em não nomear nossos objetos com os nomes existentes no programa, para verificar se determinado nome já está associado a algum objeto basta utilizar a função <em><code>exists()</code>,</em> por exemplo: <em>exists(“aov”)</em> se a função retornar com o TRUE, significa que tal nome já está associado a determinado objeto no programa, devemos utilizar nomes curtos e comentar cada linha de comando com o uso do # para facilitar o entendimento após a criação da rotina.</p>
 
 
 <script id="quarto-html-after-body" type="application/javascript">

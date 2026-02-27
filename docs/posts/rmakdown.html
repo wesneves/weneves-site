@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Wesley Neves">
+<meta name="dcterms.date" content="2022-01-17">
 
-<title>Wesley Neves</title>
+<title>Rmarkdown – Wesley Neves</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,43 +23,117 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-html/tabby.min.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-html-734cb40618f438257b19a1e532635a32.min.css" rel="stylesheet" append-hash="true" data-mode="light">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-html-734cb40618f438257b19a1e532635a32.min.css" rel="stylesheet" append-hash="true" data-mode="light">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body>
 
 
+<header id="title-block-header">
+<h1 class="title">Rmarkdown</h1>
+<p class="author">Wesley Neves</p>
 
+<p class="date">2022-01-17</p>
+</header>
 
-
-<div class="hero-box">
-<h1>
-Wesley Neves
-</h1>
-<p class="subtitle">
-Biólogo &amp; Cientista de Dados
-</p>
-<p class="description">
-Transformando dados marinhos em conhecimento ecológico através de modelos quantitativos e programação em R.
-</p>
-<div class="hero-buttons">
-<p><a href="./about.html" class="btn-primary">Saiba mais sobre mim</a> <a href="projects.qmd" class="btn-secondary">Ver Projetos</a></p>
+<nav id="TOC" role="doc-toc">
+    <h2 id="toc-title">Nesta página</h2>
+   
+  <ul>
+  <li><a href="#r-markdown" id="toc-r-markdown">R Markdown</a></li>
+  <li><a href="#materiais-para-consulta-r-markdown" id="toc-materiais-para-consulta-r-markdown">Materiais para Consulta R-Markdown</a>
+  <ul>
+  <li><a href="#documento-gerado-automaticamente-após-criar-um-arquivo-r-markdown-no-rstudio" id="toc-documento-gerado-automaticamente-após-criar-um-arquivo-r-markdown-no-rstudio">Documento gerado automaticamente após criar um arquivo R markdown no RStudio</a></li>
+  <li><a href="#including-plots" id="toc-including-plots">Including Plots</a></li>
+  </ul></li>
+  </ul>
+</nav>
+<h1 id="r-markdown">R Markdown</h1>
+<p>Inicialmente é necessário baixar o pacote rmarkdown no RStudio, em seguida podemos criar um novo arquivo rmarkdown em <strong>file - new file - R Markdown.</strong></p>
+<p>Para facilitar a aprendizagem dessa sintaxe de formatação da escrita nós podemos utilizar o botão <strong>Switch to sourve editor</strong> (um botão que parece um compasso que se localiza abaixo do botão de maximizar da janela onde o arquivo rmarkdown será aberto).</p>
+<p>Com essa função ativa, o autor não precisará gravar linhas de comandos para adicionar, títulos, tópicos, letras em negrito, adicionar código, imagens, links, citações etc. Todas essas funcionalidades ficam disponíveis no painel da aba rmakdown.</p>
+<p>Após escrever os comandos necessário para o nosso relatório, basta visualizar o relatório no formato desejado, que no nosso caso seria o HTML, para tal, será necessário antes salvar o arquivo e só então apertar o botão <strong>knit</strong> para visualizar o resultado através da aba <strong>viwer</strong> no quadrante onde ficam os pacotes e arquivos do RStudio.</p>
+<p>Um conselho seria consultar todas as funcionalidades disponibilizadas no cabeçalho da aba e gravar os atalhos no teclado para agilizar nossa escrita.</p>
+<h1 id="materiais-para-consulta-r-markdown">Materiais para Consulta R-Markdown</h1>
+<p><a href="https://bookdown.org/yihui/rmarkdown/">Livro Guia Definitivo de RMARKDOWN</a></p>
+<p><a href="https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf">Folhas de Dicas Rmarkdown</a></p>
+<p><a href="https://rmarkdown.rstudio.com/lesson-1.html">Livro Rmarkdown</a></p>
+<h2 id="documento-gerado-automaticamente-após-criar-um-arquivo-r-markdown-no-rstudio" class="anchored">Documento gerado automaticamente após criar um arquivo R markdown no RStudio</h2>
+<p>Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <a href="http://rmarkdown.rstudio.com" class="uri">http://rmarkdown.rstudio.com</a>.</p>
+<p>When you click the <strong>Knit</strong> button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(cars)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>     speed           dist       
+ Min.   : 4.0   Min.   :  2.00  
+ 1st Qu.:12.0   1st Qu.: 26.00  
+ Median :15.0   Median : 36.00  
+ Mean   :15.4   Mean   : 42.98  
+ 3rd Qu.:19.0   3rd Qu.: 56.00  
+ Max.   :25.0   Max.   :120.00  </code></pre>
 </div>
 </div>
+<h2 id="including-plots" class="anchored">Including Plots</h2>
+<p>You can also embed plots, for example:</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img src="rmakdown_files/figure-html/pressure-1.png" class="img-fluid" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Note that the <code>echo = FALSE</code> parameter was added to the code chunk to prevent printing of the R code that generated the plot.</p>
 
 
 <script id="quarto-html-after-body" type="application/javascript">

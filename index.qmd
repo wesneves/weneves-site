@@ -7,7 +7,7 @@ page-layout: full
 
 <h1>Wesley Neves</h1>
 
-<p class="subtitle">Oceanógrafo & Cientista de Dados</p>
+<p class="subtitle">Biólogo & Cientista de Dados</p>
 
 <p class="description">
 Transformando dados marinhos em conhecimento ecológico através de modelos quantitativos e programação em R.
