@@ -39,7 +39,35 @@
     "href": "index.html",
     "title": "Wesley Neves",
     "section": "",
-    "text": "Oceanógrafo | Ecologia Marinha | Modelagem Estatística\nIntegro ecologia de comunidades marinhas e ciência de dados para compreender padrões ecológicos e formar pesquisadores mais quantitativos.\n\n“A ciência é feita de fatos, como uma casa é feita de pedras; mas um amontoado de fatos não é mais ciência do que um amontoado de pedras é uma casa.” — Henri Poincaré\n\n\nMinha Trajetória Acessar Curso\n\n\n\n\n\n Ecologia de Comunidades\nAnálise de biodiversidade e estrutura funcional em ambientes estuarinos e costeiros.\n\n\n Modelagem em R\nUso de GLMs, GAMs e análise multivariada para decifrar séries temporais ambientais.\n\n\n Educação Científica\nCapacitação de pesquisadores através do curso “Do Dado ao Artigo”."
+    "text": "“Nada na vida deve ser temido, apenas compreendido. Agora é a hora de compreender mais, para que possamos temer menos.”\n— Marie Skłodowska-Curie"
+  },
+  {
+    "objectID": "index.html#sobre",
+    "href": "index.html#sobre",
+    "title": "Wesley Neves",
+    "section": "Sobre",
+    "text": "Sobre\nSou biólogo com foco em ecologia de comunidades e métodos quantitativos aplicados à biodiversidade marinha. Minha atuação integra modelagem estatística, sensoriamento remoto, visualização de dados e formação de pesquisadores para elevar a qualidade analítica de estudos ecológicos."
+  },
+  {
+    "objectID": "index.html#linhas",
+    "href": "index.html#linhas",
+    "title": "Wesley Neves",
+    "section": "Linhas de pesquisa",
+    "text": "Linhas de pesquisa\n\n\n Ecologia de Comunidades\nEstrutura e dinâmica da biodiversidade em ambientes costeiros e estuarinos, com abordagem funcional, filogenética e taxonômica.\n\n\n Modelagem em R\nGLMs, GAMs, modelos mistos, análise multivariada e séries temporais para inferência ecológica mais robusta.\n\n\n Formação Científica\nTreinamentos práticos para quem deseja sair do “dado bruto” e chegar ao artigo com mais segurança metodológica."
+  },
+  {
+    "objectID": "index.html#projetos",
+    "href": "index.html#projetos",
+    "title": "Wesley Neves",
+    "section": "Projetos em destaque",
+    "text": "Projetos em destaque\n\n\n ### Monitoramento ecológico costeiro Modelagem de diversidade e sazonalidade em gradientes ambientais estuarinos. Ver estudo\n\n\n ### Diversidade funcional de copépodes Integração de traços funcionais e abundância para métricas de redundância ecológica. Ver estudo\n\n\n ### Curso: Do Dado ao Artigo Formação aplicada em organização de dados, análise em R e escrita científica orientada. Saiba mais"
+  },
+  {
+    "objectID": "index.html#contato",
+    "href": "index.html#contato",
+    "title": "Wesley Neves",
+    "section": "Contato",
+    "text": "Contato\n\n wesley.neves@ufpe.br\n github.com/wesneves"
   },
   {
     "objectID": "about.html",
